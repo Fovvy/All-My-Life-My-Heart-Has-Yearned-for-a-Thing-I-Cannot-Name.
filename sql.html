@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<form action="/api" method="post" class="login-form" style="text-align: center">
+    <input id="1">
+    <input id="2">
+	
+	<h1>Login</h1>
+
+
+<div class="input-fields">
+  <input type="search" class="input-box" required="required"/>
+  <p>Username</p>
+  
+</div>
+
+<div class="input-fields">
+  <input type="password" class="input-box" required="required"/>
+  <p>Password</p>
+</div>
+  
+  <input type="submit" value="Login" class="btn"/>
+
+</form>
+<script>
+    const user = document.getElementById("1")
+    const password = document.getElementById("2")
+    form.addEventListener('login', function(e){
+        e.preventDefault();
+        console.log([...data])
+    
+    fetch("/api",{
+        method:"POST",
+        body: JSON.stringify(data),
+    }) 
+    .then(res =>res.json())
+    .then(data => console.log(data))
+    .then(err =>console.log(err))
+
+    })
+</script>
+</body>
+</html>
