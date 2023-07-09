@@ -2,9 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <link rel="shortcut icon" type="x-icon" href="burberry.png">
-  <title>Parastus</title>
-  
+  <title>Parastus Portfolio</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   
   <link rel="stylesheet" href="style.css">
@@ -12,31 +10,44 @@
 
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top nav_right">
-    <div class="container-fluid">
+  <!-- my navba -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid text-center">
       <a class="navbar-brand" href="#"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse flex-d flex-row-reverse nav_right" id="navbarNavAltMarkup">
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="#home">Home</a>
           <a class="nav-link" href="#experience">Experience</a>
           <a class="nav-link" href="#skills">Skills</a>
-
-          <a class="nav-link" href="#projects">Projects</a>
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" id="projectsDropdown" data-bs-toggle="dropdown" aria-expanded="false">Explore</a>
+            <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+              <li><a class="dropdown-item" href="dashboard\index.html">Dashboard</a></li>
+              <li><a class="dropdown-item" href="#">Travel</a></li>
+              <li><a class="dropdown-item" href="#">Creative Showcase</a></li>
+              
+            </ul>
+          </div>
+          <a class="nav-link enable" href="#" tabindex="-1" aria-disabled="true"></a>
         </div>
       </div>
     </div>
   </nav>
+  
+  
+  
+   
+  
 <!-- partial:index.partial.html -->
 <section class="hero" id="home">
   <div class="content">
     <div class="header">
       <h1>Parastus Nghiilwamo</h1>
       <a>𝘦𝘷𝘦𝘳𝘺𝘵𝘩𝘪𝘯𝘨...</a>
-      <h3>𝐂𝐲𝐛𝐞𝐫𝐬𝐞𝐜𝐮𝐫𝐢𝐭𝐲 | 𝐌𝐚𝐜𝐡𝐢𝐧𝐞 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠 | 𝐈𝐨𝐓</h3>
+      <h3>𝐂𝐲𝐛𝐞𝐫𝐬𝐞𝐜𝐮𝐫𝐢𝐭𝐲 | 𝐌𝐚𝐜𝐡𝐢𝐧𝐞 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠 | 𝐏𝐡𝐨𝐭𝐨𝐠𝐫𝐚𝐩𝐡𝐲</h3>
     </div>
   </div>
 </section>
@@ -57,25 +68,35 @@
       Thank you for taking the time to visit my growing blog/portfolio site. I hope my work resonates with you, and I look forward to connecting and collaborating with like-minded individuals who share my goals for technology and its potential to shape our future! :D .</p>
   </div>
 </section>
-<section class="experience" id="experience">
+<section class="experience transparent-section" id="experience">
   <div class="content">
-    <h1>Experiences</h1>
-    <p>more loading..</p>
+    <h1><u>Experience</u></h1>
+    
     <ul>
       <li>
         <div class="experience-content hidden">
           <h2>Voraltex</h2>
-          <div class="experience-time">Aug - Nov 2019</div>
+          <div class="experience-time">Aug 2019 - Nov 2019</div>
           <p><strong><u>Cybersecurity Apprentice</u></strong></p>
           <p>• MySQL Databases & Web Applications</p>
           <p>• Networking Fundamentals (Completed CCNA1) </p>
           <p>• Pentesting and performing Security Assessments for Systems & Web Applications</p>
-
         </div>
-      
+      </li>
+      <li>
+        <div class="experience-content hidden">
+          <h2>Namibia Chess Federation</h2>
+          <div class="experience-time">Jun 2023 - Current</div>
+          <p><u><strong>Software Engineer Intern</u></strong></p>
+          <p>• Web Development</p>
+          <p>• Security Improvement of NCF web Application</p>
+          <p>• Configuring Security Policies and Firewalls within a Computer Lab.</p>
+        </div>
+      </li>
     </ul>
   </div>
 </section>
+
 <section class="skills" id="skills">
   <div class="content">
     <div class="development-wrapper">
@@ -170,9 +191,10 @@
   </div>
   <div class="clear"></div>
 </section>
+<!-- #####################     RESUME      ###################### -->
 <section class="resume">
   <div class="content">
-    <a href="Parastus-Resume.pdf" target="Parastus-Resume.pdf">
+    <a href="myresume.pdf" target="Parastus-Resume.pdf">
       <div class="btn-resume">
         <i class="fa fa-download fa-2x" aria-hidden="true"></i>
         <span>Get My Resume<span>
@@ -183,7 +205,7 @@
 <section class="portfolio" id="projects">
   <div class="content">
     
-    <h1>𝚂𝚘𝚖𝚎 𝙿𝚛𝚘𝚓𝚎𝚌𝚝𝚜</h1>
+    <h1>𝑺𝒐𝒎𝒆 𝑾𝒐𝒓𝒌𝒔</h1>
     
     <div class="projects">
       
@@ -204,10 +226,10 @@
           <img src="https://images.unsplash.com/photo-1638734255266-7597abac8571?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80" alt=""/>
         </div>
         <div class="project-title">
-          <h2>Project #2: Raspberry Pi</h2>
+          <h2>Project #2: Note Taking AI</h2>
         </div>
         <div class="project-description">
-          <p>still brewing ..</p>
+          <p>will be completed soon!</p>
         </div>
       </div>
       <div class="project">
@@ -245,7 +267,7 @@
         </a>
       </li>
       <li class="social">
-        <a href="https://pin.it/4GZuBO1" target="_blank" class="instagram">
+        <a href="https://instagram.com/parastus?igshid=NGExMmI2YTkyZg==" target="_blank" class="instagram">
           <i class="fa fa-instagram" aria-hidden="true"></i>
         </a>
       </li>
@@ -261,8 +283,10 @@
   <p>Made with 💪🏽 by Parastus</p>
 
 </section>
-<!-- DONT ASK -->
+<!-- partial -->
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 </html>
