@@ -5,7 +5,6 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
-
 *,
 *:before,
 *:after {
@@ -27,6 +26,7 @@ body {
   font-family: "PT Sans", sans-serif;
 }
 
+
 a {
   color: inherit;
   text-decoration: none;
@@ -41,15 +41,73 @@ section {
 /*##### HERO SECTION #####*/
 .hero {
   height: 100%;
-  /* Credit image : Unsplash - Luke Chesser */
-  background: url("https://cdnb.artstation.com/p/assets/images/images/003/258/791/large/ngurah-arya-old-computer2.jpg?1471756763");
+  background: url("https://images.pexels.com/photos/1714340/pexels-photo-1714340.jpeg");
+  
   background-size: cover;
   background-position: center;
+  background-attachment: fixed; 
+  
 }
-.hero .content {
+/* ###### MY NAVBAR ########## */
+
+.navbar {
+  background-color: #e4c8c834;
+  border-radius: 4px; 
+}
+
+.navbar .dropdown-menu {
+  background-color: rgba(73, 72, 72, 0.5); /* Adjust the alpha value to control the transparency */
+}
+.navbar-solid {
+  background-color: #58515196; /* Replace with the desired background color */
+  /* other styling properties */
+}
+
+
+.dropdown-item .content .header a {
+  color: #ff0000; /* Replace with your desired color */
+}
+ 
+.navbar .dropdown-item a {
+  color: #fff;
+  font-size: 2.5em;
+  text-shadow: 0px 2px 3px #f8f5f5;
+}
+
+.nav-link-scroll {
+  color: #fff; /* Adjust the color for the scrolled nav links */
+}
+
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px #fff;
+  }
+  50% {
+    box-shadow: 0 0 20px #fff;
+  }
+  100% {
+    box-shadow: 0 0 5px #fff;
+  }
+}
+
+.navbar-scroll {
+  animation: glowing 4s infinite; /* Adjust the duration as needed */
+}
+
+
+.navbar-scroll {
+  animation: glowing 2.5s infinite; /* Apply the glowing animation to the navbar-scroll class */
+}
+
+/* MY HOME PAGE! */
+.hero .content                         
+ {
+  
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
+
 }
 .hero .content .header {
   position: absolute;
@@ -65,16 +123,46 @@ section {
   font-size: 2.5em;
   text-shadow: 0px 2px 3px #f8f5f5;
 }
+.hero .content .header a {
+  color: #fff;
+  font-size: 1em;
+  text-shadow: 0px 2px 3px #f8f5f5;
+}
+.hero .content .header h3 {
+  color: #fff;
+  font-size: 1.9em;
+  text-shadow: 0px 2px 3px #f8f5f5;
+}
 
 /*##### ABOUT MYSELF SECTION #####*/
 .about-myself {
-  padding: 50px 20px;
+  position: relative;
+  padding: 0;
 }
+
+.about-myself::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://images.pexels.com/photos/1843717/pexels-photo-1843717.jpeg?auto=compress&cs=tinysrgb&w=1600");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+  filter: blur(3px);
+  z-index: -1;
+}
+
 .about-myself .content {
   text-align: center;
 }
+
 .about-myself .content h2 {
-  color: #3d3d3d;
+  user-select: none;
+  color: #1d1d1d;
   font-size: 3em;
   margin-bottom: 20px;
   -webkit-transform: translateY(-50px) scale(0);
@@ -83,27 +171,54 @@ section {
   -moz-transition: transform 0.7s;
   transition: transform 0.7s;
 }
+
 .about-myself .content .aboutTitleVisible {
   -webkit-transform: translateY(0px) scale(1);
-  transform: translateX(0px) scale(1);
+  transform: translateX(80px) scale(1);
 }
+
 .about-myself .content p span {
-  color: #302315;
+  color: #252524;
   font-weight: bold;
+  
 }
 
 /*##### EXPERIENCE SECTION #####*/
+
 .experience {
-  background: #2b241d;
+  background-image: url("");
+  
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 50px 0;
   overflow-x: hidden;
+  position: relative;
 }
+
+.experience::before {
+  content: "Hi";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://images.pexels.com/photos/2081176/pexels-photo-2081176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  filter: blur(10px); /* Adjust the blur amount as desired */
+  opacity: 10; 
+  z-index: -2;
+}
+
+
+
 .experience .content {
   text-align: center;
 }
 .experience .content h1 {
   font-size: 2em;
-  color: #fff;
+  color: #030303; 
 }
 .experience .content ul {
   padding: 50px 0;
@@ -121,7 +236,7 @@ section {
 }
 .experience .content ul li:before {
   content: "";
-  background: #1a1a1a;
+  background: #665e5e;
   position: absolute;
   left: 50%;
   top: 0;
@@ -129,14 +244,14 @@ section {
   transform: translateX(-50%);
   width: 20px;
   height: 20px;
-  border: 4px solid #f9f9f9;
+  border: 4px solid #faededea;
 }
 .experience .content ul li .hidden {
   opacity: 0;
   margin-left: 10vw;
 }
 .experience .content ul li .experience-content {
-  background: #f9f9f9;
+  background: #fffbfba1;
   position: relative;
   top: 7px;
   left: 48px;
@@ -149,21 +264,21 @@ section {
 }
 .experience .content ul li .experience-content h2 {
   font-size: 1.5em;
-  color: #3c3c3c;
+  color: #1f1f1f;
   padding-bottom: 10px;
 }
 .experience .content ul li .experience-content .experience-time {
   color: #777;
   font-size: 1.1em;
   padding-bottom: 10px;
-}
+} 
 .experience .content ul li .experience-content p {
-  color: #1a1a1a;
+  color: #000000;
   font-size: 0.95em;
 }
 .experience .content ul li .experience-content:before {
   content: "";
-  background: #f9f9f9;
+  background: rgb(255, 255, 255);
   position: absolute;
   top: 0;
   left: -35px;
@@ -209,7 +324,7 @@ section {
   height: 10px;
 }
 .skills .content .development-wrapper .skills-bar-container li .bar-container .progressbar {
-  background: #ac7446;
+  background: #494746;
   position: absolute;
   width: 0%;
   height: 100%;
@@ -249,18 +364,25 @@ section {
 
 /*##### RESUME SECTION #####*/
 .resume {
-  background: #252017;
+  background-image: url("https://images.unsplash.com/photo-1521811628991-7a3ea581f7d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+  background-color: #3d3b3b;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-image: url("https://images.pexels.com/photos/2081176/pexels-photo-2081176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-attachment: fixed;
+  
+  filter: blur(2px); /* Adjust the blur amount as desired */
+  opacity: 10; 
+  z-index: -2;
 }
 .resume .content {
-  background: rgba(0, 0, 0, 0.3);
-  padding: 50px 0;
+  background: rgba(102, 89, 89, 0.137);
+  padding: 20px 0;
   text-align: center;
 }
 .resume .content a {
-  color: #fff;
+  color: #3f3d3d;
   text-transform: uppercase;
 }
 .resume .content a .btn-resume {
@@ -303,7 +425,7 @@ section {
 
 /*##### PORTFOLIO SECTION #####*/
 .portfolio {
-  background: #f9f9f9;
+  background: #fdfdfd;
   padding: 80px 0;
 }
 .portfolio .content {
@@ -324,7 +446,7 @@ section {
   width: 100%;
 }
 .portfolio .content .projects .project {
-  color: #fff;
+  color: #a70000;
   position: relative;
   width: 80%;
   margin-left: 10%;
