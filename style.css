@@ -37,7 +37,6 @@ section {
   width: 100%;
 }
 
-
 /*##### HERO SECTION #####*/
 .hero {
   height: 100%;
@@ -52,14 +51,20 @@ section {
 
 .navbar {
   background-color: #e4c8c834;
-  border-radius: 4px; 
+  background-repeat: no-repeat;
+ 
 }
 
 .navbar .dropdown-menu {
   background-color: rgba(73, 72, 72, 0.5); /* Adjust the alpha value to control the transparency */
 }
 .navbar-solid {
-  background-color: #58515196; /* Replace with the desired background color */
+  background-color: #58515196;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+  overflow-x: hidden;
+  position: relative;;/* Replace with the desired background color */
   /* other styling properties */
 }
 
@@ -75,7 +80,12 @@ section {
 }
 
 .nav-link-scroll {
-  color: #fff; /* Adjust the color for the scrolled nav links */
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+  overflow-x: hidden;
+  position: relative; /* Adjust the color for the scrolled nav links */
 }
 
 
@@ -138,6 +148,12 @@ section {
 .about-myself {
   position: relative;
   padding: 0;
+  background-color: #d1cfcf00;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .about-myself::before {
@@ -147,7 +163,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("https://images.pexels.com/photos/1843717/pexels-photo-1843717.jpeg?auto=compress&cs=tinysrgb&w=1600");
+  background-image: url();
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -206,7 +222,7 @@ section {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  filter: blur(10px); /* Adjust the blur amount as desired */
+  filter: blur(8px); /* Adjust the blur amount as desired */
   opacity: 10; 
   z-index: -2;
 }
