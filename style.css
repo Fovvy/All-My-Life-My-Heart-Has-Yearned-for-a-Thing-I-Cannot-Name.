@@ -234,7 +234,7 @@ section {
 }
 .experience .content h1 {
   font-size: 2em;
-  color: #030303; 
+  color: #f0efef; 
 }
 .experience .content ul {
   padding: 50px 0;
@@ -256,7 +256,7 @@ section {
   position: absolute;
   left: 50%;
   top: 0;
-  -webkit-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%); 
   transform: translateX(-50%);
   width: 20px;
   height: 20px;
@@ -267,7 +267,7 @@ section {
   margin-left: 10vw;
 }
 .experience .content ul li .experience-content {
-  background: #fffbfba1;
+  background: #fffbfbbd;
   position: relative;
   top: 7px;
   left: 48px;
@@ -294,20 +294,48 @@ section {
 }
 .experience .content ul li .experience-content:before {
   content: "";
-  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.979);
   position: absolute;
   top: 0;
   left: -35px;
   width: 35px;
   height: 5px;
+  background: #fffbfba1;
 }
 
 /*##### SKILLS SECTION #####*/
-.skills {
-  padding: 70px 20px;
+
+.skills::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://images.pexels.com/photos/2081176/pexels-photo-2081176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #fffbfbea;
+  background-size: cover;
+  filter: blur(5px); /* Adjust the blur amount as desired */
+  opacity: 1; /* Adjust the opacity as desired */
+  z-index: -1;
+  border: 0px solid transparent;
+  border-radius: px;
+  border: none;
+  background: rgba(248, 247, 247, 0.911); /* Set the background color with transparency */
+  padding: 20px; /* Adjust the padding as desired */
+  border-radius: 0px; /* Add border radius if needed */
 }
+
+
+
+
+
+
+
 .skills .content .development-wrapper .development-title {
-  color: #3c3c3c;
+  color: #141414;
   font-size: 2em;
   text-align: center;
   margin-bottom: 20px;
@@ -322,7 +350,7 @@ section {
   margin-bottom: 20px;
 }
 .skills .content .development-wrapper .skills-bar-container li .progressbar-title {
-  color: #000000;
+  color: #181818;
   margin-bottom: 5px;
 }
 .skills .content .development-wrapper .skills-bar-container li .progressbar-title h3 {
@@ -334,13 +362,13 @@ section {
   font-size: 1.1em;
 }
 .skills .content .development-wrapper .skills-bar-container li .bar-container {
-  background: #ececec;
+  background: #afafaf73;
   position: relative;
   width: 100%;
   height: 10px;
 }
 .skills .content .development-wrapper .skills-bar-container li .bar-container .progressbar {
-  background: #494746;
+  background: #201f1e;
   position: absolute;
   width: 0%;
   height: 100%;
@@ -357,7 +385,7 @@ section {
 }
 .skills .content .tools-knowledge-wrapper .tools-wrapper .title,
 .skills .content .tools-knowledge-wrapper .knowledge-wrapper .title {
-  color: #3c3c3c;
+  color: #141414;
   font-size: 2em;
   margin-bottom: 10px;
 }
@@ -368,39 +396,39 @@ section {
 }
 .skills .content .tools-knowledge-wrapper .tools-wrapper ul li,
 .skills .content .tools-knowledge-wrapper .knowledge-wrapper ul li {
-  color: #444;
+  color: #252525;
   font-weight: bold;
   font-size: 1.1em;
   text-align: left;
 }
 .skills .content .tools-knowledge-wrapper .tools-wrapper ul li i,
 .skills .content .tools-knowledge-wrapper .knowledge-wrapper ul li i {
-  color: #27ae60;
+  color: #00ff73;
 }
 
 /*##### RESUME SECTION #####*/
 .resume {
-  background-image: url("https://images.unsplash.com/photo-1521811628991-7a3ea581f7d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
-  background-color: #3d3b3b;
+  border: none;
+  background-image: url("https://images.pexels.com/photos/2081176/pexels-photo-2081176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("https://images.pexels.com/photos/2081176/pexels-photo-2081176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  background-attachment: fixed;
-  
-  filter: blur(2px); /* Adjust the blur amount as desired */
-  opacity: 10; 
-  z-index: -2;
+  backdrop-filter: blur(20x); /* Adjust the blur amount as desired */
+  opacity: 1.0; 
 }
+
 .resume .content {
   background: rgba(102, 89, 89, 0.137);
   padding: 20px 0;
   text-align: center;
 }
+
 .resume .content a {
   color: #3f3d3d;
   text-transform: uppercase;
 }
+
 .resume .content a .btn-resume {
   display: inline-block;
   font-size: 1.1em;
@@ -411,7 +439,9 @@ section {
   border: 2px solid #fff;
   border-radius: 5px;
   overflow: hidden;
+  backdrop-filter: none; /* Add this line to remove blur from the button */
 }
+
 .resume .content a .btn-resume span {
   -webkit-transition: opacity 1.2s;
   -moz-transition: opacity 1.2s;
@@ -429,19 +459,32 @@ section {
   -moz-transition: top 0.5s;
   transition: top 0.5s;
 }
+
 .resume .content a .btn-resume:hover span {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.4s;
   -moz-transition: opacity 0.4s;
   transition: opacity 0.4s;
 }
+
 .resume .content a .btn-resume:hover i {
   top: 0;
 }
 
+
+
 /*##### PORTFOLIO SECTION #####*/
+.project-image {
+
+  border-radius: 14px; /* Adjust the border-radius value as desired */
+  overflow: hidden; /* Hide any overflowing content within the rounded image container */
+  
+}
+
 .portfolio {
-  background: #fdfdfd;
+  background-image: url("https://i.pinimg.com/564x/f8/db/d1/f8dbd174d1a5e7e0b908d64e988d0039.jpg");
+  background-attachment: fixed;
+  
   padding: 80px 0;
 }
 .portfolio .content {
@@ -499,7 +542,7 @@ section {
   text-align: center;
 }
 .contact .socials .social a {
-  color: #572b03;
+  color: #333333;
   font-size: 1.5em;
   -webkit-transition: color 0.3s;
   -moz-transition: color 0.3s;
@@ -507,7 +550,7 @@ section {
 }
 
 .contact .socials .social .twitter:hover {
-  color: #57AEE7;
+  color: #57e787;
 }
 .contact .socials .social .linkedin:hover {
   color: #0177B5;
@@ -521,11 +564,11 @@ section {
   text-align: center;
 }
 .footer p {
-  color: #4d3406;
+  color: #333333  ;
   font-size: 1.1em;
 }
 .footer i {
-  color: #573c03;
+  color: #333333;
 }
 
 /* ############################
