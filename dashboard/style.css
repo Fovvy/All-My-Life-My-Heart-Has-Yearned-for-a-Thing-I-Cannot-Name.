@@ -160,7 +160,7 @@ body input, body h1, body h3, body a, body span {
   z-index: 1;
 }
 #app #app-background #app-background-image {
-  background-image: url("https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80");
+  background-image: url("https://images.pexels.com/photos/5380608/pexels-photo-5380608.jpeg?auto=compress&cs=tinysrgb&w=1600");
   height: 100%;
   transition: filter 250ms, transform 250ms;
   width: 100%;
