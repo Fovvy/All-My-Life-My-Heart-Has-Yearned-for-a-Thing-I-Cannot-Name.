@@ -102,8 +102,8 @@ const Reminder = () => {
         React.createElement("div", { className: "reminder-icon" },
             React.createElement("i", { className: "fa-regular fa-bell" })),
         React.createElement("span", { className: "reminder-text" },
-            "Extra cool people meeting ",
-            React.createElement("span", { className: "reminder-time" }, "10AM"))));
+            "Kaizen",
+            React.createElement("span", { className: "reminder-time" }, "1"))));
 };
 const Time = () => {
     const date = useCurrentDateEffect();
@@ -287,7 +287,7 @@ const Weather = () => {
                     React.createElement("span", { className: "day-name" }, day.name))));
         });
     };
-    return (React.createElement(MenuSection, { icon: "fa-solid fa-sun", id: "weather-section", scrollable: true, title: "How's it look out there?" }, getDays()));
+    return (React.createElement(MenuSection, { icon: "fa-solid fa-sun", id: "weather-section", scrollable: true, title: "Gym Log" }, getDays()));
 };
 const Tools = () => {
     const getTools = () => {
@@ -345,20 +345,20 @@ const Tools = () => {
 const Restaurants = () => {
     const getRestaurants = () => {
         return [{
-                desc: "The best burgers in town",
+                desc: "Certifications",
                 id: 1,
                 image: "https://images.unsplash.com/photo-1606131731446-5568d87113aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnVyZ2Vyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-                title: "Burgers"
+                title: "Certifications"
             }, {
-                desc: "The worst ice-cream around",
+                desc: "ID Documents",
                 id: 2,
                 image: "https://images.unsplash.com/photo-1576506295286-5cda18df43e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aWNlJTIwY3JlYW18ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-                title: "Ice Cream"
+                title: "Identification"
             }, {
-                desc: "This 'Za be gettin down",
+                desc: "My Google Drive",
                 id: 3,
                 image: "https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-                title: "Pizza"
+                title: "Google Drive"
             }, {
                 desc: "BBQ ain't need no rhyme",
                 id: 4,
@@ -375,7 +375,7 @@ const Restaurants = () => {
                         React.createElement("span", { className: "restaurant-card-desc" }, restaurant.desc)))));
         });
     };
-    return (React.createElement(MenuSection, { icon: "fa-regular fa-pot-food", id: "restaurants-section", title: "Get it delivered!" }, getRestaurants()));
+    return (React.createElement(MenuSection, { icon: "fa-regular fa-pot-food", id: "restaurants-section", title: "Quick Documents" }, getRestaurants()));
 };
 const Movies = () => {
     const getMovies = () => {
@@ -438,6 +438,7 @@ const Menu = () => {
                     React.createElement("div", { className: "app-menu-content-header-section" },
                         React.createElement(UserStatusButton, { icon: "fa-solid fa-arrow-right-from-arc", id: "sign-out-button", userStatus: UserStatus.LoggedOut }))),
                 React.createElement(QuickNav, null),
+                
                 React.createElement(Weather, null),
                 React.createElement(Restaurants, null),
                 React.createElement(Tools, null),
