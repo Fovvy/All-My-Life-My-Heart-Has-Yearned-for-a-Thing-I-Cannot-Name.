@@ -292,15 +292,15 @@ const Weather = () => {
 const Tools = () => {
     const getTools = () => {
         return [{
-                icon: "fa-solid fa-cloud-sun",
+                
                 id: 1,
-                image: "https://images.unsplash.com/photo-1492011221367-f47e3ccd77a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHdlYXRoZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-                label: "Weather",
-                name: "Cloudly"
+                image: "https://i.pinimg.com/564x/ca/7c/04/ca7c04416148d178b85935bd915a5b29.jpg",
+                label: "CyberChef",
+                name: "Cybersecurity swiss knife"
             }, {
                 icon: "fa-solid fa-calculator-simple",
                 id: 2,
-                image: "https://images.unsplash.com/photo-1587145820266-a5951ee6f620?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2FsY3VsYXRvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+                image: "https://i.pinimg.com/564x/d4/f5/d7/d4f5d7654bda4c9842291069b0551f7b.jpg",
                 label: "Calc",
                 name: "Mathio"
             }, {
@@ -347,23 +347,23 @@ const Restaurants = () => {
         return [{
                 desc: "Certifications",
                 id: 1,
-                image: "https://images.unsplash.com/photo-1606131731446-5568d87113aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnVyZ2Vyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+                image: "https://i.pinimg.com/564x/e7/4f/71/e74f711ffece26fd640eeaa68e4c59f8.jpg",
                 title: "Certifications"
             }, {
                 desc: "ID Documents",
                 id: 2,
-                image: "https://images.unsplash.com/photo-1576506295286-5cda18df43e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aWNlJTIwY3JlYW18ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+                image: "https://i.pinimg.com/564x/de/67/21/de672186785565714fffd1903bd129ad.jpg",
                 title: "Identification"
             }, {
                 desc: "My Google Drive",
                 id: 3,
-                image: "https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+                image: "https://i.pinimg.com/564x/b1/6c/09/b16c09a074abfbac6df18d8fabbe74fa.jpg",
                 title: "Google Drive"
             }, {
-                desc: "BBQ ain't need no rhyme",
+                desc: "Unsorted Files",
                 id: 4,
-                image: "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YmFyYmVxdWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-                title: "BBQ"
+                image: "https://i.pinimg.com/564x/96/eb/85/96eb859b2f3395fc34094eee93bcbd0c.jpg",
+                title: "Miscellaneous"
             }].map((restaurant) => {
             const styles = {
                 backgroundImage: `url(${restaurant.image})`
