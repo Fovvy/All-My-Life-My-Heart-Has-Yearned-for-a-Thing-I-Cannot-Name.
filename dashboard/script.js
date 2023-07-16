@@ -300,7 +300,7 @@ const Tools = () => {
             }, {
                 icon: "fa-solid fa-calculator-simple",
                 id: 2,
-                image: "https://i.pinimg.com/564x/d4/f5/d7/d4f5d7654bda4c9842291069b0551f7b.jpg",
+                image: "https://www.pinterest.com/pin/777011741989772264/",
                 label: "Calc",
                 name: "Mathio"
             }, {
