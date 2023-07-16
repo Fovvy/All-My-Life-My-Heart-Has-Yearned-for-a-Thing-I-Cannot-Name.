@@ -362,7 +362,7 @@ const Restaurants = () => {
             }, {
                 desc: "Unsorted Files",
                 id: 4,
-                image: "https://i.pinimg.com/564x/96/eb/85/96eb859b2f3395fc34094eee93bcbd0c.jpg",
+                image: "https://i.pinimg.com/564x/6c/52/90/6c529054d6f9822b9b3acb7788096124.jpg",
                 title: "Miscellaneous"
             }].map((restaurant) => {
             const styles = {
