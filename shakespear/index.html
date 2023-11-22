@@ -1,0 +1,69 @@
+ <!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Random Shakespeare Sonnet</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main>
+      <em>clicketh Shakespeare for a random sonnet</em>
+      <section>
+        <svg width="300" height="180" xmlns="http://www.w3.org/2000/svg">
+         <g id="shakespeare" fill="none" fill-rule="nonzero">
+           <path d="M164 120h112c13.255 0 24 10.745 24 24v36H152c-6.627 0-12-5.373-12-12v-24c0-13.255 10.745-24 24-24z" fill="#C67241"/>
+           <path d="M255.802 154.54c.02-.38.03-.763.03-1.148 0-15.01-14.966-27.18-33.426-27.18s-33.425 12.17-33.425 27.18c0 .545.02 1.086.058 1.623a13 13 0 0 1-6.877-13.717l5.307-31.625a13 13 0 0 1 10.666-10.668L221.959 95l24.51 4.006a13 13 0 0 1 10.764 10.941l4.643 31.614c.78 5.31-1.77 10.342-6.074 12.98z" fill="#D8D8D8"/>
+           <rect fill="#5B5E65" x="164" y="84" width="113" height="22" rx="11"/>
+           <path d="M271 86c0-34.794-22.833-63-51-63s-51 28.206-51 63" fill="#5B5E65"/>
+           <ellipse fill="#FFD8B8" cx="220" cy="70" rx="37" ry="46"/>
+           <path fill="#5B5E65" d="M220 110l-5-13h10z"/>
+           <circle fill="#5B5E65" cx="232" cy="62" r="4"/>
+           <circle fill="#5B5E66" cx="208" cy="62" r="4"/>
+           <rect fill="#FFC5A2" x="215" y="63" width="11" height="20" rx="3"/>
+           <g fill="#5B5E65">
+             <path d="M209.404 93.096l5.657-12.728 7.07 7.071z"/>
+             <path d="M231.596 93.096l-12.728-5.657 7.071-7.07z"/>
+           </g>
+           <g transform="translate(42 23)">
+             <ellipse fill="#FFD8B8" transform="rotate(-45 23.688 56.688)" cx="23.688" cy="56.688" rx="11.5" ry="22"/>
+             <path fill="#C67241" d="M145.394 207.283l-25.16 16.34-96.4-148.445 25.16-16.34z"/>
+             <g transform="translate(7)">
+               <path d="M40.94 43.375c.04.53.06 1.073.06 1.625 0 6.075-2.462 11-5.5 11-2.434 0-4.5-3.163-5.224-7.547-.19.04-.38.078-.572.114C28.964 52.89 26.914 56 24.5 56c-2.453 0-4.531-3.212-5.24-7.649a25.245 25.245 0 0 1-.501-.12C18.069 52.728 15.975 56 13.5 56 10.462 56 8 51.075 8 45c0-.83.046-1.639.133-2.416C3.135 38.104 0 31.661 0 24.5 0 10.969 11.193 0 25 0s25 10.969 25 24.5c0 7.594-3.525 14.38-9.06 18.875z" fill="#C8CBD7"/>
+               <circle fill="#5B5E65" cx="16.5" cy="25.5" r="5.5"/>
+               <circle fill="#5B5E65" cx="33.5" cy="25.5" r="5.5"/>
+               <path fill="#5B5E65" d="M25 28l5 12H20z"/>
+             </g>
+           </g>
+         </g>
+       </svg>
+      </section>
+
+      <article id="sonnet">
+      </article>
+
+      <div id="feather-container">
+        <p><em>loading...</em></p>
+        <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="nonzero">
+            <g class="loader" transform="translate(40 36)">
+              <path d="M47.178 81.794C35.444 95.755 23.833 103.188 17.51 99.538c-5.017-2.896-5.655-12.167-2.594-24.438l4.68 4.587-2.83-11.004c2.756-8.483 6.997-17.975 12.54-27.575 6.523-11.3 13.818-20.96 20.763-27.994L52.5 27l3.361-19.208c7.38-6.06 13.938-8.546 18.15-6.115 3.585 2.07 4.934 7.395 4.295 14.744l-8.408 2.563 7.66 2.787c-2.006 10.722-7.305 24.415-15.343 38.337C58.87 65.904 55.32 71.27 51.718 76.07L38 79.5l9.178 2.294z" fill="#4A90E2"/>
+              <rect fill="#333" transform="rotate(30 30.232 78.363)" x="28.232" y="21.363" width="4" height="114" rx="2"/>
+            </g>
+            <g transform="translate(133 128)">
+              <ellipse stroke="#6A6A6A" fill="#333" cx="15" cy="39" rx="7" ry="1"/>
+              <path d="M15 39c8.284 0 15-6.268 15-14s-6.716-14-15-14C6.716 11 0 17.268 0 25s6.716 14 15 14z" fill-opacity=".73" fill="#333"/>
+              <path d="M0 25c0 7.732 6.716 14 15 14 8.284 0 14.917-6.268 14.917-14-5.04 1.337-10.012 2.006-14.917 2.006-4.418 0-9.418-.669-15-2.006z" fill="#333"/>
+              <path fill="#6A6A6A" d="M10 2h10v18H10z"/>
+              <ellipse stroke="#6A6A6A" fill="#6A6A6A" cx="15" cy="1" rx="7" ry="1"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </main>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
