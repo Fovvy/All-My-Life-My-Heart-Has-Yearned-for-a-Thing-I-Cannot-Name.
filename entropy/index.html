@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Maxwell&#39;s Demon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<button id="help-button" onclick="openNav()">?</button>
+<div id="drawer" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/Maxwell%27s_demon" id="info-header" target="_blank">Maxwell's Demon</a> is a thought experiment created by the physicist
+        James Clerk Maxwell in 1867 in which he suggested how the second
+        law of thermodynamics might hypothetically be violated.
+        In the thought experiment, a demon controls a small door between two
+        chambers of gas. As individual gas molecules approach the door, the demon
+        quickly opens and shuts the door so that only fast molecules are passed
+        into one of the chambers, while only slow molecules are passed into the other.
+        Because faster molecules are hotter, the demon's behaviour causes one
+        chamber to warm up and the other to cool down,
+        thereby decreasing entropy and violating the second law of thermodynamics.
+      </p>
+
+      <img class="maxwell-img" width="320" height="118" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Maxwell%27s_demon.svg/1920px-Maxwell%27s_demon.svg.png" alt="Visualization of Maxwell's Demon" />
+</div>
+
+<section id="demon-container">
+  <svg id="demon-svg" viewBox="0 0 182 146" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" fill-rule="evenodd">
+      <path d="M143.286 70c4.345 11.936-1.6 25.058-13.276 29.308-11.677 4.25-24.665-1.98-29.01-13.917" stroke="#333" stroke-width="5"/>
+      <g fill-rule="nonzero">
+        <path d="M176.157 110.35c-2.878 16.317-18.217 27.251-34.262 24.422-16.045-2.829-26.72-18.35-23.842-34.667" stroke="#333" stroke-width="5"/>
+        <path fill="#333" d="M178.687 95.042l3.13 16.799L170 109.757z"/>
+      </g>
+      <path d="M26.712 66.604c-4.344 11.936 4.545 26.13 19.855 31.702 15.31 5.573 31.243.414 35.587-11.523" stroke="#333" stroke-width="5"/>
+      <g fill-rule="nonzero">
+        <path d="M4 12c0 13.255 10.297 24 23 24s23-10.745 23-24" stroke="#333" stroke-width="8"/>
+        <rect fill="#333" x="23" y="37" width="8" height="109" rx="4"/>
+        <path fill="#333" d="M23 14h8v27h-8zM27 2l4 12h-8zM4 0l4 12H0zM50 0l4 12h-8z"/>
+      </g>
+      <path d="M46 134c0-32.585 20.371-59 45.5-59s45.5 26.415 45.5 59H46zM78 134c0 6.627-4.03 12-9 12s-9-5.373-9-12h18zM122 134c0 6.627-4.03 12-9 12s-9-5.373-9-12h18zM111.532 39.542C114.347 43.206 116 47.676 116 52.5 116 64.926 105.031 75 91.5 75S67 64.926 67 52.5c0-4.796 1.634-9.241 4.418-12.893l1.86-17.925 7.626 10.525C84.111 30.793 87.704 30 91.5 30c3.782 0 7.365.787 10.563 2.193l7.615-10.51 1.854 17.86z" fill="#333" fill-rule="nonzero"/>
+      <ellipse fill="#333" fill-rule="nonzero" cx="26" cy="63.5" rx="7" ry="6.5"/>
+      <ellipse fill="#333" fill-rule="nonzero" cx="144" cy="68.5" rx="7" ry="6.5"/>
+    </g>
+  </svg>
+</section>
+
+    <section id="ui-instructions">
+      <em>
+        Click the demon to open and shut the divider
+      </em>
+    </section>
+
+    <section id="instructions">
+        [🔥][❄️] Can you separate the red <span class="text-bunch">and blue molecules [❄️][🔥]?</span>
+    </section>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
