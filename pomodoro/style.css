@@ -1,0 +1,158 @@
+body {
+  font-family: 'Futura', 'Helvetica', sans-serif;
+  text-align: center;
+}
+
+.incs {
+  border-radius: 50%;
+  font-size: 11px;
+  background-color: white;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.session, .break {
+  padding: 20px;
+}
+
+.title {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 60px;
+}
+
+span {
+  font-size: 32px;
+}
+
+.time span {
+  font-size: 80px;
+  color: #be1a19;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.time {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.start-stop {
+  width: 200px;
+  margin-top: 30px;
+  font-size: 24px;
+}
+
+progress,          /* All HTML5 progress enabled browsers */
+progress[role]     /* polyfill */
+{
+ 
+        /* Turns off styling - not usually needed, but good to know. */
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+ 
+        /* gets rid of default border in Firefox and Opera. */
+        border: none;
+ 
+        /* Needs to be in here for Safari polyfill so background images work as expected. */
+        background-size: auto;
+         
+        /* Dimensions */
+        width: 400px;
+        height: 60px;
+         
+}
+
+/* Polyfill */
+progress[role]:after {
+        background-image: none; /* removes default background from polyfill */
+}
+ 
+/* Ensure fallback text doesn't appear in polyfill */
+progress[role] strong {
+        display: none;
+}
+ 
+/* This sets the dimensions of our sample PB element*/
+#timebar {
+  -webkit-appearance: none;
+  max-width: 90%;
+  height: 20px;
+  margin-top: 20px;
+}
+/* Background Colors  */
+progress,                          /* Firefox  */
+progress[role][aria-valuenow] {    /* Polyfill */
+   background: #c9c9c9 !important; /* !important is needed by the polyfill */
+}
+ 
+/* Chrome */
+progress::-webkit-progress-bar {
+    background: #c9c9c9;
+}
+ 
+/* Foreground Colors   */
+/* IE10 */
+progress {
+    color: #be1a19;
+}
+ 
+/* Firefox */
+progress::-moz-progress-bar { 
+    background: #be1a19;   
+}
+ 
+/* Chrome */
+progress::-webkit-progress-value {
+    background: #be1a19;
+}
+ 
+/* Polyfill */
+progress[aria-valuenow]:before  {
+    background: #be1a19;
+}
+
+@media (max-width: 420px) {
+  .title {
+    font-size: 60px;
+  }
+  
+  #session-length, #break-length {
+    font-size: 24px;
+  }
+  
+  .time span {
+    font-size: 60px;
+  }
+
+  img {
+    width: 45px;
+  }
+}
+
+@media (max-width: 330px) {
+  .title {
+    font-size: 40px;
+    margin-top: 40px;
+  }
+  
+  .time span {
+    font-size: 40px;
+  }
+  
+  .start-stop {
+    width: 140px;
+    font-size: 16px;
+  }
+
+  img {
+    width: 30px;
+  }
+}

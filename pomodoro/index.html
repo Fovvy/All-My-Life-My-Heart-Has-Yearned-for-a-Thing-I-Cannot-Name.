@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Pomodoro Clock</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="title">
+    Pom<img src="https://camo.githubusercontent.com/81d4c80ebbf4dd8e4e96f96e3feecf8514c5bc88/68747470733a2f2f63646e322e69636f6e66696e6465722e636f6d2f646174612f69636f6e732f6272696768742d666f6f642d70726f64756374732f3531322f746f6d61746f2d3531322e706e67">doro
+  </div>
+  <div>
+    <div class="time-type">
+      Session Time Remaining
+    </div>
+    <div class="time">
+      <span id="minutes"></span>
+      <span id="colon"></span>
+      <span id="seconds"></span>
+    </div>
+  </div>
+ 
+  <div class="flex-container">
+    <div class="break">
+      <div>
+        Break Length
+      </div>
+      <div class="break-timer">
+        <button class="incs break-minus">
+          <i class="fa fa-minus" aria-hidden="true"></i>
+        </button>
+        <span id="break-length"></span>
+        <button class="incs break-plus">
+          <i class="fa fa-plus" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="session">
+      <div>
+        Session Length
+      </div>
+      <div class="session-timer">
+        <button class="incs session-minus">
+          <i class="fa fa-minus" aria-hidden="true"></i>
+        </button>
+        <span id="session-length"></span>
+        <button class="incs session-plus">
+          <i class="fa fa-plus" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+</div>
+  
+  <progress id="timebar" max="100" value="0">
+  </progress>
+  
+  <div>
+    <button class="start-stop">
+      <i class="fa fa-clock-o" aria-hidden="true"></i>
+      Start Timer
+    </button>
+  </div>
+</div>
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
