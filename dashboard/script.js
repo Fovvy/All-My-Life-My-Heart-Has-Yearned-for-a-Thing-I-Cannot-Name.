@@ -371,12 +371,8 @@ const Restaurants = () => {
             return (React.createElement("div", { key: restaurant.id, className: "restaurant-card background-image", style: styles },
                 React.createElement("div", { className: "restaurant-card-content" },
                     React.createElement("div", { className: "restaurant-card-content-items" },
-const href = `/${restaurant.title.toLowerCase().replace(/ /g, '')}`; // This generates a dynamic path based on the title
-
-React.createElement("a", { href }, // Use the dynamic href instead of "/certificates"
-React.createElement("span", { className: "restaurant-card-title" }, restaurant.title)
-)
-
+                    React.createElement("a", { href: "/certificates" }, // Adjust the path as needed   
+                    React.createElement("span", { className: "restaurant-card-title" }, restaurant.title) ),
                         React.createElement("span", { className: "restaurant-card-desc" }, restaurant.desc)))));
         });
     };
