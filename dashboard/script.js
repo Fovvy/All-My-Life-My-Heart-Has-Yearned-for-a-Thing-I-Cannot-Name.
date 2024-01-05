@@ -343,6 +343,7 @@ const Tools = () => {
     return (React.createElement(MenuSection, { icon: "fa-solid fa-toolbox", id: "tools-section", title: "What's Appening?" }, getTools()));
 };
 const Restaurants = () => {
+    const googleDriveUrl = "https://google.com/"; // GOOGLE DRIVE BUTTON
     const getRestaurants = () => {
         return [{
                 desc: "Certifications",
@@ -368,7 +369,11 @@ const Restaurants = () => {
             const styles = {
                 backgroundImage: `url(${restaurant.image})`
             };
-            const href = `/${restaurant.title.toLowerCase().replace(/ /g, '')}`; // THIS IS NEW
+            const href = restaurant.title === "Google Drive"
+              ? googleDriveUrl // Use the constant here
+              : `/${restaurant.title.toLowerCase().replace(/ /g, '')}`;
+
+            const href = `/${restaurant.title.toLowerCase().replace(/ /g, '')}`; // THIS IS NEW 
             return (React.createElement("div", { key: restaurant.id, className: "restaurant-card background-image", style: styles },
                 React.createElement("div", { className: "restaurant-card-content" },
                     React.createElement("div", { className: "restaurant-card-content-items" },
