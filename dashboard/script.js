@@ -340,7 +340,7 @@ const Tools = () => {
                     React.createElement("i", { className: classNames(tool.icon, "tool-card-icon") }))));
         });
     };
-    return (React.createElement(MenuSection, { icon: "fa-solid fa-toolbox", id: "tools-section", title: "What's Appening?" }, getTools()));
+    return (React.createElement(MenuSection, { icon: "fa-solid fa-toolbox", id: "tools-section", title: "What's Happening?" }, getTools()));
 };
 const Restaurants = () => {
     const googleDriveUrl = "https://google.com/"; // GOOGLE DRIVE BUTTON
@@ -406,7 +406,7 @@ const Movies = () => {
                 id: 4,
                 icon: "fa-solid fa-starship-freighter",
                 image: "https://images.unsplash.com/photo-1533613220915-609f661a6fe1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3RhciUyMHdhcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-                title: "Area Fights"
+                title: "Anime Watchlist"
             }].map((movie) => {
             const styles = {
                 backgroundImage: `url(${movie.image})`
