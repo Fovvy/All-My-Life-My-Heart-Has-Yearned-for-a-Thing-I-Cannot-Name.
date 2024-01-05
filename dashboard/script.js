@@ -369,10 +369,7 @@ const Restaurants = () => {
             const styles = {
                 backgroundImage: `url(${restaurant.image})`
             };
-            const href = restaurant.title === "Google Drive"
-              ? googleDriveUrl // Use the constant here
-              : `/${restaurant.title.toLowerCase().replace(/ /g, '')}`;
-
+//my buttons 
             const href = `/${restaurant.title.toLowerCase().replace(/ /g, '')}`; // THIS IS NEW 
             return (React.createElement("div", { key: restaurant.id, className: "restaurant-card background-image", style: styles },
                 React.createElement("div", { className: "restaurant-card-content" },
