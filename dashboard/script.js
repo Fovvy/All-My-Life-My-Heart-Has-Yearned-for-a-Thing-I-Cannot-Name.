@@ -368,11 +368,12 @@ const Restaurants = () => {
             const styles = {
                 backgroundImage: `url(${restaurant.image})`
             };
+            const href = `/${restaurant.title.toLowerCase().replace(/ /g, '')}`; // THIS IS NEW
             return (React.createElement("div", { key: restaurant.id, className: "restaurant-card background-image", style: styles },
                 React.createElement("div", { className: "restaurant-card-content" },
                     React.createElement("div", { className: "restaurant-card-content-items" },
-                    React.createElement("a", { href: "/certificates" }, // Adjust the path as needed   
-                    React.createElement("span", { className: "restaurant-card-title" }, restaurant.title) ),
+                        React.createElement("a", { href }, // No quotes needed for href   
+                        React.createElement("span", { className: "restaurant-card-title" }, restaurant.title) ),
                         React.createElement("span", { className: "restaurant-card-desc" }, restaurant.desc)))));
         });
     };
