@@ -739,3 +739,16 @@ section {
     text-align: left;
   }
 }
+
+/* COPYRIGHT */
+.copyright-footer {
+  height: fit-content;
+  text-align: center;
+  padding: 10px;
+  background-color: #f4f4f41f; /* Adjust the background color as needed */
+  background-position: bottom;
+  bottom: 0;
+  width: 100%; /* Set to 100% to span the full width */
+  color: #777; /* Text color */
+  font-size: 12px; /* Adjust the font size as needed */
+}
