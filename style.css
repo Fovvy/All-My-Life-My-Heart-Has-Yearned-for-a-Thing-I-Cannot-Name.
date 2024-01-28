@@ -40,7 +40,7 @@ section {
 /*##### HERO SECTION #####*/
 .hero {
   height: 100%;
-  background: url("https://images.pexels.com/photos/1714340/pexels-photo-1714340.jpeg");
+  background: url("pexels-minh-phuc-19197877.jpg");
   
   background-size: cover;
   background-position: center;
@@ -50,7 +50,7 @@ section {
 /* ###### MY NAVBAR ########## */
 
 .navbar {
-  background-color: #e4c8c834;
+  background-color: #e4d7c834;
   background-repeat: no-repeat;
  
 }
@@ -181,11 +181,12 @@ section {
   color: #1d1d1d;
   font-size: 3em;
   margin-bottom: 20px;
-  -webkit-transform: translateY(-50px) scale(0);
-  transform: translateY(-50px) scale(0);
+  -webkit-transform: translateY(0px) scale(1);
+  transform: translateY(0px) scale(1);
   -webkit-transition: transform 0.7s;
   -moz-transition: transform 0.7s;
-  transition: transform 0.7s;
+  transition: transform 10000s;
+  
 }
 
 .about-myself .content .aboutTitleVisible {
@@ -210,7 +211,13 @@ section {
   overflow-x: hidden;
   position: relative;
 }
+.experience .content .logo {
+  margin-right: 20px; /* Adjust spacing between logo and content */
+}
 
+.experience .content .logo img {
+  max-width: 50px; /* Adjust the maximum width of the logo */
+}
 .experience::before {
   content: "Hi";
   position: absolute;
@@ -218,7 +225,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("https://images.pexels.com/photos/2081176/pexels-photo-2081176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: url("https://images.pexels.com/photos/7535032/pexels-photo-7535032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -739,7 +746,6 @@ section {
     text-align: left;
   }
 }
-
 /* COPYRIGHT */
 .copyright-footer {
   height: fit-content;
