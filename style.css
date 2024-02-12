@@ -41,7 +41,7 @@ section {
 .hero {
   height: 100%;
   background: url("pexels-minh-phuc-19197877.jpg");
-  
+  transition: filter 250ms, transform 250ms;
   background-size: cover;
   background-position: center;
   background-attachment: fixed; 
@@ -204,7 +204,7 @@ section {
 
 .experience {
   background-image: url("");
-  
+  transition: filter 250ms, transform 250ms;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px 0;
