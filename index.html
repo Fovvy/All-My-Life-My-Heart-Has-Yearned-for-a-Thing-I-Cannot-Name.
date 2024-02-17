@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <title>Parastus</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-  <link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js'></script>
+  
 <link rel="shortcut icon" href="glu.png" type="x-icon">
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -14,7 +15,9 @@
 .skills,
 .resume,
 .portfolio,
-.contact {
+.contact
+ {
+  
   background-color: transparent;
 }
 </style>
@@ -86,8 +89,9 @@
 </section>
 <section class="experience transparent-section" id="experience">
   <div class="content">
-    <h1><u>Experience</u></h1>
-    
+    <h1 class='display-4'>
+      Experience
+    </h1>
     <ul>
       <li>
         <div class="logo">
@@ -142,210 +146,74 @@
 
 
 <!-- SKILLS -->
-<section class="skills" id="skills">
-  <div class="content">
-    <div class="development-wrapper">
-      <h2 class="development-title">Skills</h2>
-      <ul class="skills-bar-container">
-        <li>
-          <div class="progressbar-title">
-            <h3>Linux</h3>
-            <span class="percent" id="html-pourcent"></span>
-          </div>
-          <div class="bar-container" data-percent="99">
-            <span class="progressbar" id="progress-html"></span>
-          </div>
-        </li>
-        <li>
-          <div class="progressbar-title">
-            <h3>Cloud Architecting</h3>
-            <span class="percent" id="css-pourcent"></span>
-          </div>
-          <div class="bar-container" data-percent="97%">
-            <span class="progressbar" id="progress-css"></span>
-          </div>
-        </li>
-        <li>
-          <div class="progressbar-title">
-            <h3>Cloud Security</h3>
-            <span class="percent" id="javascript-pourcent"></span>
-          </div>
-          <div class="bar-container" data-percent="98">
-            <span class="progressbar" id="progress-javascript"></span>
-          </div>
-        </li>
-        <li>
-          <div class="progressbar-title">
-            <h3>Incident Response</h3>
-            <span class="percent" id="php-pourcent"></span>
-          </div>
-          <div class="bar-container" data-percent="95">
-            <span class="progressbar" id="progress-php"></span>
-          </div>
-        </li>
-        <li>
-          <div class="progressbar-title">
-            <h3>Web Development</h3>
-            <a>HTML, CSS, Javascript</a>
-            <span class="percent" id="angular-pourcent"></span>
-          </div>
-          <div class="bar-container" data-percent="88">
-            <span class="progressbar" id="progress-angular"></span>
-          </div>
-        </li>
-        <li>
-          <div class="progressbar-title">
-            <h3>Networking</h3>
-            <span class="percent" id="angular-pourcent"></span>
-          </div>
-          <div class="bar-container" data-percent="94">
-            <span class="progressbar" id="progress-angular"></span>
-          </div><li>
-            <div class="progressbar-title">
-              <h3>Controls and frameworks</h3>
-              
-              <span class="percent" id="angular-pourcent"></span>
-            </div>
-            <div class="bar-container" data-percent="86">
-              <span class="progressbar" id="progress-angular"></span>
-            </div>
-          </li><li>
-            <div class="progressbar-title">
-              <h3>Reverse Engineering</h3>
-              
-              <span class="percent" id="angular-pourcent"></span>
-            </div>
-            <div class="bar-container" data-percent="98">
-              <span class="progressbar" id="progress-angular"></span>
-            </div>
-            </li>
-        <li>
-            
-          </li>
-        </li>
-      </ul>
-    </div>
-    <div class="tools-knowledge-wrapper">
-      <div class="tools-wrapper">
-        <h2 class="title">Tools</h2>
-        <ul class="tools">
-          <li>
-            <i class="fa fa-check" aria-hidden="true"></i>
-            Metasploit
-          </li>
-          <li>
-            <i class="fa fa-check" aria-hidden="true"></i>
-            BloodHound
-          </li>
-          <li>
-            <i class="fa fa-check" aria-hidden="true"></i>
-            Wireshark
-          </li>
-          <li>
-            <i class="fa fa-check" aria-hidden="true"></i>
-            Docker
-          </li>
-          <li>
-            <i class="fa fa-check" aria-hidden="true"></i>
-            Kubernetes
-          </li>
-          <li>
-            <i class="" aria-hidden="true"></i>
-            
-          </li>
-          
-          <li>
-            <i class="" aria-hidden="true"></i>
-            
-          </li>
-           <li>
-            <i class="fa fa-check" aria-hidden="true"></i>
-            AWS CloudWatch
-          </li>
-          <li>
-            <i class="fa fa-check" aria-hidden="true"></i>
-            Cloud Platforms
-          </li>
-          <li>
-            <i class="fa fa-check" aria-hidden="true"></i>
-            Security Information and Event Management (SIEM)
-          </li>
-        </ul>
-      </div>
-      <div class="knowledge-wrapper">
-        <h2 class="title">Knowledge</h2>
-        <ul class="knowledge">
-          <li>
-            <i class="fa fa-check" aria-hidden="true"></i>
-            IT Security
-          </li>
-          <li>
-            <i class="fa fa-check" aria-hidden="true"></i>
-            Penetration Testing
-          </li>
-          <li>
-            <i class="fa fa-check" aria-hidden="true"></i>
-            Threat Intelligence
-          </li>
-          <li>
-            <i class="fa fa-check" aria-hidden="true"></i>
-            Operating Systems
-          </li>
-          <li>
-            <i class="fa fa-check" aria-hidden="true"></i>
-            Critical thinking
-          </li>
-          <li>
-            <i class="" aria-hidden="true"></i>
-            
-          </li>
-          <li>
-            
-          <li>
-            <i class="" aria-hidden="true"></i>
-            
-          </li>
-          <li>
-            <i class="" aria-hidden="true"></i>
-            
-          </li>
-           <li>
-            <i class="fa fa-check" aria-hidden="true"></i>
-            Cloud Service Models 
-          </li>
-          <li>
-            <i class="fa fa-check" aria-hidden="true"></i>
-            Cloud Security 
-          </li>
-          <li>
-            <i class="fa fa-check" aria-hidden="true"></i>
-            Cloud Monitoring
-          </li>
-          
-        </ul>
-      </div>
-    </div>
-    <div class="clear"></div>
+<section>
+  <br></br>
+  <div class='container'>
+    <h1 class='display-4'>
+      Skills
+    </h1>
+    <br></br>
+    <ul class='skills list-unstyled'>
+      <li class='skills__item'>
+        <figure>
+          <canvas height='200' id='html_css' width='200'></canvas>
+          <figcaption>
+            Cybersecurity 
+          </figcaption>
+        </figure>
+      </li>
+      <li class='skills__item'>
+        <figure>
+          <canvas height='200' id='sass' width='200'></canvas>
+          <figcaption>
+            Webflow
+          </figcaption>
+        </figure>
+      </li>
+      <li class='skills__item'>
+        <figure>
+          <canvas height='200' id='jquery' width='200'></canvas>
+          <figcaption>
+            Product Design
+          </figcaption>
+        </figure>
+      </li>
+      <li class='skills__item'>
+        <figure>
+          <canvas height='200' id='rails' width='200'></canvas>
+          <figcaption>
+            Reverse Engineering 
+          </figcaption>
+        </figure>
+      </li>
+      <li class='skills__item'>
+        <figure>
+          <canvas height='200' id='backbone' width='200'></canvas>
+          <figcaption>
+            Robotics & Automation
+          </figcaption>
+        </figure>
+      </li>
+      <li class='skills__item'>
+        <figure>
+          <canvas height='200' id='photoshop' width='200'></canvas>
+          <figcaption>
+            Cloud Architecture
+          </figcaption>
+        </figure>
+      </li>
+    </ul>
   </div>
-  <div class="clear"></div>
-
-<!-- THAT EXTRA SPACING >:D -->
-
-  <section>
-   <div>
-     <p> </p>
-   </div>
-  </section>
+  <br></br>
+  <br></br>
 </section>
+
+
 <!-- #####################     RESUME      ###################### -->
 <section class="resume">
-  <div class="content">
-    <a href="resume-parastus.pdf" target="resume-parastus.pdf">
-      <div class="btn-resume">
-        <i class="fa fa-download fa-2x" aria-hidden="true"></i>
-        <span>Get My Resume<span>
-      </div>
-    </a>
+  <div class="button-container"> 
+    <a href="pari - resume.pdf">𝒢𝐸𝒯 𝑀𝒴 𝑅𝐸𝒮𝒰𝑀𝐸</a>
+
   </div>
 </section>
 
@@ -353,101 +221,142 @@
 
 
 
-
-
-
+<!-- PROJECTSSSSSS -->
 
 <section class="portfolio" id="projects">
-  <div class="content">
-    
-   <h1>Some works</h1>
-
-<div class="projects">
-
-  <div class="project">
-    <div class="project-image">
-      <!-- Credit image: Unsplash - Harman Abiwardani -->
-      <a href="#"><img src="ethernet.jpg" alt="ethernet"></a>
-    </div>
-    <div class="project-title">
-      <h2>Project #1: Ethernet Cable</h2>
-    </div>
-    <div class="project-description">
-      <p><strong>Here is an Ethernet cable i made at Voraltex, on my first attempt! :) (this is a place holder till i finish working on my projects page)</strong></p>
-    </div>
-  </div>
   
-  <div class="project">
-    <div class="project-image">
-      <!-- Credit image: Unsplash - Patrick Hendry -->
-      <img src="https://i.pinimg.com/564x/a5/86/b0/a586b0bd2e3373ea0870ff06834191f1.jpg" alt=""/>
-    </div>
-    <div class="project-title">
-      <h2>AWS Project</h2>
-    </div>
-    <div class="project-description">
-      <p>My first AWS project! 
-        Built a fortune teller application using AWS LAMBDA and API GATEWAY, that resonds to user questions</p>
-    </div>
-  </div>
-  
-  <div class="project">
-    <div class="project-image">
-      <!-- Credit image: Unsplash - Ken Cheung -->
-      <img src="https://i.pinimg.com/736x/3c/16/ae/3c16aec2e1c6e8d4c88e8976242d18f9.jpg" alt=""/>
-    </div>
-    <div class="project-title">
-      <h2>Project #3 Python Keylogger</h2>
-    </div>
-    <div class="project-description">
-      <p>Will update here when complete. :D</p>
-    </div>
-    <div class="project">
-      <div class="project-image">
-        <!-- Credit image: Unsplash - Ken Cheung -->
-        <img src="https://i.pinimg.com/736x/3c/16/ae/3c16aec2e1c6e8d4c88e8976242d18f9.jpg" alt=""/>
-      </div>
-      <div class="project-title">
-        <h2>Project #3 Python Keylogger</h2>
-      </div>
-      <div class="project-description">
-        <p>Will update here when complete. :D</p>
+  <div class="container-fluid">
+   <br></br><div class='container'>
+     <h1 class='display-4'>
+      Some Works
+    </h1>
+    <br></br>
+   <br></br>
+   <div class="row">
+     <div class="col-md-3 col-sm-12 navigation-panel">
+       <nav>
+         <ul class="navigation-list row">
+           <li class="navigation-list-item col-md-12 col-sm-2 col-xs-2 active" data-nav="#who"> 
+             <div class="key-text">Project #1</div>
+             <div class="support-text">Cable</div>
+           </li>
+           <li class="navigation-list-item col-md-12 col-sm-2 col-xs-2" data-nav="#what"> 
+             <div class="key-text">Project #2</div>
+             <div class="support-text">AWS </div>
+           </li>
+           <li class="navigation-list-item col-md-12 col-sm-2 col-xs-2" data-nav="#how"> 
+             <div class="key-text">Project #3 </div>
+             <div class="support-text">Ballerina</div>
+           </li>
+           <li class="navigation-list-item col-md-12 col-sm-2 col-xs-2" data-nav="#why"> 
+             <div class="key-text">Project #4 </div>
+             <div class="support-text">IPS</div>
+           </li>
+           <li class="navigation-list-item col-md-12 col-sm-2 col-xs-2" data-nav="#where"> 
+             <div class="key-text">Project #5 </div>
+             <div class="support-text">what's next?</div>
+           </li>
+         </ul>
+       </nav>
+     </div>
+
+     <!-- PROJECT 1 -->
+     <div class="col-md-9 col-sm-12 panels">
+       <div class="panel active" id="who">
+         <h2>Project: Ethernet Cable </h2>
+         <h5>Here is an Ethernet cable i made at Voraltex, on my first attempt! :D</h5>
+         <br></br>
+         <p>My first completed Ethernet cable, assembled during my time at Voraltex. Following industry standards and best practices, I carefully terminated the RJ-45 connector, ensuring each wire was precisely aligned and secured according to the T568B color sequence. </p>
+         <p>I utilized essential tools like a cable stripper for clean wire preparation, a crimping tool for securely terminating the RJ-45 connector, and a cable tester to verify connections and troubleshoot any errors, which in my case, there weren't any. 😎</p>
+
+         <!-- IMAGE -->
+          <div class="project-image">
+          <!-- Credit image: Unsplash - Ken Cheung -->
+          <img src="ethernet.jpg" alt=""/>
+          </div>
+       </div>
+
+       <!-- PROJECT 2 -->
+       
+       <div class="panel" id="what">
+         <h2>Project: AWS Fortune Teller🪄</h2>         
+         <h5>BUILT A FORTUNE teller application using AWS LAMBDA and API GATEWAY, that responds to user questions</h5>
+         <br></br>
+         <p>Now, this application can't actually tell your fortune and you probably shouldnt take any advice from it, But what you can do is ask any question that you like, and the application will tell you yes or no. 😁</p>
+         <br></br>
+         <!-- IMAGE -->
+          <div class="project-image">
+          <!-- Credit image: Unsplash - Ken Cheung -->
+          <img src="flowers.jpg" alt=""/>
+          </div>
+         
+       </div>
+       <div class="panel" id="how">
+         <h2>Project: Distributed System with Ballerina</h2>
+         <h5>Performance Management System with GraphQL and Ballerina</h5>
+         <p></p>
+         <p>For a school assignment, I collaborated on a comprehensive performance management system for a simulated university department, showcasing expertise in 𝗚𝗿𝗮𝗽𝗵𝗤𝗟 API design, Ballerina programming, and database integration (MySQL & MongoDB). </p>
+         <p>My tasks included defining GraphQL schemas, implementing client-server interactions in Ballerina, and contributing to a scalable performance tracking architecture.<</p>
+
+         <!-- IMAGE -->
+          <div class="project-image">
+          <!-- Credit image: Unsplash - Ken Cheung -->
+          <img src="ballerina (1).png" alt=""/>
         
-      </div>
-    </div>
-  </div>
-  <div class="project">
-    <div class="project-image">
-      <!-- Credit image: Unsplash - Ken Cheung -->
-      <img src="https://i.pinimg.com/736x/3c/16/ae/3c16aec2e1c6e8d4c88e8976242d18f9.jpg" alt=""/>
-    </div>
-    <div class="project-title">
-      <h2>Project #3 Python Keylogger</h2>
-    </div>
-    <div class="project-description">
-      <p>Will update here when complete. :D</p>
-    </div>
-    <div class="project">
-      <div class="project-image">
-        <!-- Credit image: Unsplash - Ken Cheung -->
-        <img src="https://i.pinimg.com/736x/3c/16/ae/3c16aec2e1c6e8d4c88e8976242d18f9.jpg" alt=""/>
-      </div>
-      <div class="project-title">
-        <h2>Project #3 Python Keylogger</h2>
-      </div>
-      <div class="project-description">
-        <p>Will update here when complete. :D</p>
-        
-      </div>
-    </div>
-  </div>
-  </div>
-</div>
+          <h5>Building a Scalable Healthcare Scheduling System Using Microservices and Kafka</h5>
+          <p>I've also engineered a  microservices system to streamline specialist appointments requests.  I designed and implemented communication within the microservices utilizing 𝗞𝗮𝗳𝗸𝗮 messaging, managed MongoDB/SQL database persistence, and built containerized services with 𝗗𝗼𝗰𝗸𝗲𝗿.</p>
+          <img src="bal.png" alt=""/>
+          <p>Overall, exploring Ballerina has been a rewarding experience, and I gained valuable insights into its capabilities. :)</p>
+          <br></br>
+          <p>// collaborators: @nixonnakutimwa</p>
+          </div>
+       </div>
+       
+       <div class="panel" id="why">
+         <h2>Project: Securing Systems with OSSEC</h2>
+         <h5> Built a Dynamic Intrusion Prevention System with OSSEC</h5>
+        <p></p>
+         <p>In response to the ever-evolving threat of cyberattacks, I engineered a robust 𝙄𝙣𝙩𝙧𝙪𝙨𝙞𝙤𝙣 𝙋𝙧𝙚𝙫𝙚𝙣𝙩𝙞𝙤𝙣 𝙎𝙮𝙨𝙩𝙚𝙢 (𝙄𝙋𝙎) utilizing the capabilities of OSSEC. Within this simulated network setup, I meticulously configured an OSSEC agent on a Debian-based 𝐅𝐓𝐏 𝐬𝐞𝐫𝐯𝐞𝐫, enabling it to closely monitor system logs, file integrity, and potential malicious activity. To proactively safeguard this server, the IPS dynamically integrated with an 𝗢𝗦𝗦𝗘𝗖 𝘀𝗲𝗿𝘃𝗲𝗿 for threat detection and automated countermeasures.</p>
+         <p></p><div class="project-image">
+          <!-- Credit image: Unsplash - Ken Cheung -->
+          <img src="ossecd.png" alt=""/>
+          <br></br>
+          <img src="ossecs.png" alt=""/>
+          </div>
+          <br></br>
+         <h5>Testing the Defences:</h5>
+         <p>To frankly demonstrate the effectiveness of my IPS implementation, I orchestrated a simulated 𝐛𝐫𝐮𝐭𝐞-𝐟𝐨𝐫𝐜𝐞 𝐚𝐭𝐭𝐚𝐜𝐤 scenario using a Windows client-machine. As the attack unfolded, OSSEC diligently monitored for suspicious behavior, generating detailed alerts and successfully triggered my pre-configured response to  effectively 𝙗𝙡𝙤𝙘𝙠 𝙩𝙝𝙚 𝙖𝙩𝙩𝙖𝙘𝙠𝙚𝙧'𝙨 𝙄𝙋 𝙖𝙙𝙙𝙧𝙚𝙨𝙨.  This  swift action safeguarded the FTP server from unauthorized access and potential data compromises.</p>
+         <!-- IMAGE -->
+          <div class="project-image">
+          <!-- Credit image: Unsplash - Ken Cheung -->
+          <img src="ossecb.png" alt=""/>
+          </div>
+          <br></br>
+          <p>I closely documented the entire attack workflow, revealing how OSSEC's precise alerts and decisive preventive capabilities shielded the system against exploitation. Working on this project has been an absolute blast! ~</p>
+
+        </div>
+       
+       
+       
+       
+       <div class="panel" id="where">
+         <h2>coming soon..</h2>
+         
+       </div>
+     </div>
+    <!-- extra spacing -->
+     
+   </div><br></br>
+   <br></br>
+  <br></br><br></br>
+ 
+  <br></br>
+ </div>
 
 
-      </div>
-    </div>
-  </div>
+     </div>
+   </div>
+ </div>
 </section>
 <section class="contact">
   <div class="content">
