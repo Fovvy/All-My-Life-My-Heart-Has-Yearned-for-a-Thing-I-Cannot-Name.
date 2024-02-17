@@ -1,3 +1,78 @@
+const options = {
+  cutoutPercentage: 65,
+  animation: {
+    easing: 'easeOutQuint' },
+
+  animateScale: true,
+  tooltips: {
+    enabled: false },
+
+  events: [] };
+
+
+const skills = [
+{
+  id: "html_css",
+  values: [94, 6] },
+
+{
+  id: "sass",
+  values: [90, 10] },
+
+{
+  id: "jquery",
+  values: [90, 10] },
+
+{
+  id: "rails",
+  values: [80, 20] },
+
+{
+  id: "backbone",
+  values: [87, 13] },
+
+{
+  id: "photoshop",
+  values: [78, 22] }];
+
+
+
+let offset = 0;
+
+for (const skill of skills) {
+  const canvas = document.querySelector(`#${skill.id}`);
+  if (!canvas) {continue;}
+
+  const ctx = canvas.getContext('2d');
+
+  setTimeout(() => {
+    const chart = new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        datasets: [{
+          data: skill.values,
+          backgroundColor: [
+          'hsl(120, 40%, 60%)',
+          'hsl(0, 0%, 95%)'] }] },
+
+
+
+      options: options });
+
+  }, offset);
+
+  offset += 250;
+}
+
+
+
+
+
+
+
+
+
+
 $(document).ready(function() {
   // Main variables
   var $aboutTitle = $(".about-myself .content h2");
@@ -61,6 +136,12 @@ $(document).ready(function() {
         } else {
           $('.navbar').removeClass('navbar-solid');
         }
+        /*##### GLOWING NAVBAR EFFECT ####*/
+    if (scroll) {
+      $(".navbar").addClass("navbar-scroll");
+    } else {
+      $(".navbar").removeClass("navbar-scroll");
+    }
       });
     });
     
@@ -68,37 +149,27 @@ $(document).ready(function() {
 
     /*###### SKILLS SECTION ######*/
 
-    var middle_of_developmentWrapper =
-      $developmentWrapper.offset().top + $developmentWrapper.outerHeight() / 2;
+  
 
-    if (bottom_of_window > middle_of_developmentWrapper && !developmentIsVisible) {
-      $(".skills-bar-container li").each(function() {
-        var $barContainer = $(this).find(".bar-container");
-        var dataPercent = parseInt($barContainer.data("percent"));
-        var elem = $(this).find(".progressbar");
-        var percent = $(this).find(".percent");
-        var width = 0;
-
-        var id = setInterval(frame, 15);
-
-        function frame() {
-          if (width >= dataPercent) {
-            clearInterval(id);
-          } else {
-            width++;
-            elem.css("width", width + "%");
-            percent.html(width + " %");
-          }
-        }
-      });
-      developmentIsVisible = true;
-    }
-
-    /*##### GLOWING NAVBAR EFFECT ####*/
-    if (scroll) {
-      $(".navbar").addClass("navbar-scroll");
-    } else {
-      $(".navbar").removeClass("navbar-scroll");
-    }
+    
   }); // -- End window scroll --
 });
+
+
+
+
+// Projects
+$(document).ready(function(){
+  $(".navigation-list-item").on("click",function(){
+    removeActive();
+    var panel = $(this).data("nav");
+    $(this).addClass("active");
+    $(panel).addClass("active");
+  });
+  function removeActive() {
+    console.log("Remove current active navigation item and active panel");
+    $(".navigation-list").find(".active").removeClass("active");
+    $(".panels").find(".active").removeClass("active");
+  }
+});
+
