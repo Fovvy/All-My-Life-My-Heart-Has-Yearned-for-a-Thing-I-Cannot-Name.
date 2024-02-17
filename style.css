@@ -41,9 +41,9 @@ section {
 .hero {
   height: 100%;
   background: url("pexels-minh-phuc-19197877.jpg");
+  height: 100%;
   transition: filter 250ms, transform 250ms;
-  background-size: cover;
-  background-position: center;
+  width: 100%;
   background-attachment: fixed; 
   
 }
@@ -240,7 +240,7 @@ section {
   text-align: center;
 }
 .experience .content h1 {
-  font-size: 2em;
+  font-size: 3em;
   color: #f0efef; 
 }
 .experience .content ul {
@@ -310,231 +310,273 @@ section {
   background: #fffbfba1;
 }
 
-/*##### SKILLS SECTION #####*/
+/* SKIIIIIIILS */
 
-.skills::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("https://images.pexels.com/photos/2081176/pexels-photo-2081176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-color: #fffbfbea;
-  background-size: cover;
-  filter: blur(5px); /* Adjust the blur amount as desired */
-  opacity: 1; /* Adjust the opacity as desired */
-  z-index: -1;
-  border: 0px solid transparent;
-  border-radius: px;
-  border: none;
-  background: rgba(248, 247, 247, 0.911); /* Set the background color with transparency */
-  padding: 20px; /* Adjust the padding as desired */
-  border-radius: 0px; /* Add border radius if needed */
+
+.skills {
+  display: grid;
+  grid-gap: 15px;
+  
+  
 }
-
-
-
-
-
-
-
-.skills .content .development-wrapper .development-title {
-  color: #141414;
-  font-size: 2em;
+@media screen and (min-width: 576px) {
+  .skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .skills {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.skills__item {
+  display: flex;
+  justify-content: center;
+}
+.skills canvas {
+  width: 200px;
+  height: 200px;
+  
+}
+.skills figcaption {
+  margin-top: 10px;
+  font-weight: 500;
   text-align: center;
+  
+}
+/* END */
+
+
+
+/* 📜📜📜📜📜📜📜📜📜📜📜📜📜📜📜📜📜📜📜📜 ~~~~~~~~~~~~~~~~~~~~~~` RESUMEEEEEEEEEEEEEEEE~~~~~~~~~~~~~~~~ 📜📜📜📜📜📜📜📜📜📜📜📜📜📜📜📜*/
+
+.button-container { 
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+
+  position: static;
+}
+
+.button-container a {
+ position: absolute;
+ padding: 20px 20px 20px 30px;
+ color: #000000;
+ font-size: 20px;
+ font-family: sans-serif;
+ text-decoration: none;
+ text-transform: uppercase;
+ letter-spacing: 5px;
+ transition: .5s;
+}
+
+.button-container a:hover {
+  color: #ffffff;
+ background: #00000093;
+ transition-delay: 2s;
+ box-shadow: -30px 30px 50px rgba(0, 0, 0, 0.4);
+ transform: rotate(-20deg) skew(15deg);
+}
+
+.button-container a:before,
+.button-container a:after {
+ content: "";
+ position: absolute;
+ height: 100%;
+ width: 2px;
+ background: #a7a6a663;
+ pointer-events: none;
+ transform-style: linear;
+ transition-property: width,opacity,transform,box-shadow;
+ transition-duration: 0.5s
+}
+
+.button-container a:before {
+ top: 0;
+ left:0;
+}
+
+.button-container a:after {
+ top: 0;
+ right:0;
+}
+
+.button-container a:hover:before {
+ width:100%;
+ opacity:0.1;
+ transform:translate(5px,-5px);
+ box-shadow:+2px 2px 2px rgba(66, 179, 0, 0.1);
+ transition-delay: 0s,0.5s,1s,1.5s
+}
+
+.button-container a:hover:after {
+ width:100%;
+ opacity:0.1;
+ 
+ transform:translate(10px,-10px);
+ box-shadow:+2px 2px 2px rgba(31, 0, 0, 0.1);
+ transition-delay: 0s,0.5s,1s,1.5s
+} 
+/* --------------------------------------------------------------end of resume----------------------------------------------------------------------------------------- */
+
+
+
+
+
+/*⚒️⚒️⚒️⚒️⚒️⚒️⚒️⚒️⚒️⚒️------------------- PORTFOLIO SECTION ----------------------------⚒️⚒️⚒️⚒️⚒️⚒️⚒️⚒️⚒️⚒️*/
+html, body {
+  
+  background-image: url(""); /* NEEEEEEEEEEEEEEEED TO MAKE A BACKGROUND PHOTO FOR THISSSSSS */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: initial;
+  
+
+  
+  font-family: Monospace;
+  font-size: 16px;
+}
+/* Centering the Project Section */
+.projects-container { /* Adjust this selector if your main projects container has a different class */
+  max-width: 960px; /* Set a maximum width to prevent stretching too wide */
+  margin: 20px auto; /* Sets space above/below and centers horizontally */
+  padding: 300px; /* Optional padding for internal spacing */
+}
+h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+  
+  max-width: 960px; /* Set a maximum width to prevent stretching too wide */
+  margin: 20px auto; /* Sets space above/below and centers horizonta */
+}
+.container-fluid a {
+  text-align: center;
+}
+a {
+  word-wrap: break-word;
+  
+}
+
+.navigation-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   margin-bottom: 20px;
 }
-.skills .content .development-wrapper .skills-bar-container {
-  position: relative;
-  width: 100%;
-  list-style-type: none;
+.navigation-list .navigation-list-item {
+  cursor: pointer;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  height: 44px;
 }
-.skills .content .development-wrapper .skills-bar-container li {
-  width: 100%;
-  margin-bottom: 20px;
-}
-.skills .content .development-wrapper .skills-bar-container li .progressbar-title {
-  color: #181818;
-  margin-bottom: 5px;
-}
-.skills .content .development-wrapper .skills-bar-container li .progressbar-title h3 {
+.navigation-list .navigation-list-item div {
   display: inline-block;
 }
-.skills .content .development-wrapper .skills-bar-container li .progressbar-title .percent {
-  position: absolute;
-  right: 20px;
-  font-size: 1.1em;
+.navigation-list .navigation-list-item .key-text {
+  font-size: 1.7rem;
+  
 }
-.skills .content .development-wrapper .skills-bar-container li .bar-container {
-  background: #afafaf73;
-  position: relative;
-  width: 100%;
-  height: 10px;
+.navigation-list .navigation-list-item .support-text {
+  font-size: 1rem;
+  visibility: hidden;
 }
-.skills .content .development-wrapper .skills-bar-container li .bar-container .progressbar {
-  background: #201f1e;
-  position: absolute;
-  width: 0%;
-  height: 100%;
+.navigation-list .navigation-list-item:hover .key-text {
+  color: #3498db;
+  border-bottom: 2px solid #3498db;
 }
-.skills .content .tools-knowledge-wrapper {
-  width: 100%;
+.navigation-list .navigation-list-item:hover .support-text {
+  visibility: initial;
 }
-.skills .content .tools-knowledge-wrapper .tools-wrapper,
-.skills .content .tools-knowledge-wrapper .knowledge-wrapper {
-  position: relative;
-  padding: 20px 0;
-  width: 100%;
-  text-align: center;
+.navigation-list .navigation-list-item.active .key-text {
+  color: #e74c3c;
+  border-bottom: 2px solid #e74c3c;
 }
-.skills .content .tools-knowledge-wrapper .tools-wrapper .title,
-.skills .content .tools-knowledge-wrapper .knowledge-wrapper .title {
-  color: #141414;
-  font-size: 2em;
-  margin-bottom: 10px;
+.navigation-list .navigation-list-item.active .support-text {
+  visibility: initial;
 }
-.skills .content .tools-knowledge-wrapper .tools-wrapper ul,
-.skills .content .tools-knowledge-wrapper .knowledge-wrapper ul {
-  list-style-type: none;
-  margin-left: 40px;
+
+.panel {
+  display: none;
+  
 }
-.skills .content .tools-knowledge-wrapper .tools-wrapper ul li,
-.skills .content .tools-knowledge-wrapper .knowledge-wrapper ul li {
-  color: #252525;
+.panel.active {
+  display: block;
+}
+.panel .img-center {
+  margin: 0 auto;
+}
+.panel .img-round {
+  border-radius: 50%;
+}
+.panel h2 {
   font-weight: bold;
-  font-size: 1.1em;
-  text-align: left;
-}
-.skills .content .tools-knowledge-wrapper .tools-wrapper ul li i,
-.skills .content .tools-knowledge-wrapper .knowledge-wrapper ul li i {
-  color: #00ff73;
 }
 
-/*##### RESUME SECTION #####*/
-.resume {
-  border: none;
-  background-image: url("https://images.pexels.com/photos/2081176/pexels-photo-2081176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  backdrop-filter: blur(20x); /* Adjust the blur amount as desired */
-  opacity: 1.0; 
+.projects-list, .formation-list, .contact-list {
+ 
+  max-width: 960px; /* Set a maximum width to prevent stretching too wide */
+ 
+  
 }
 
-.resume .content {
-  background: rgba(102, 89, 89, 0.137);
-  padding: 20px 0;
-  text-align: center;
-}
-
-.resume .content a {
-  color: #3f3d3d;
-  text-transform: uppercase;
-}
-
-.resume .content a .btn-resume {
-  display: inline-block;
-  font-size: 1.1em;
-  padding: 20px;
-  margin: 0 15px;
-  background: rgba(255, 255, 255, 0.2);
-  position: relative;
-  border: 2px solid #fff;
-  border-radius: 5px;
-  overflow: hidden;
-  backdrop-filter: none; /* Add this line to remove blur from the button */
-}
-
-.resume .content a .btn-resume span {
-  -webkit-transition: opacity 1.2s;
-  -moz-transition: opacity 1.2s;
-  transition: opacity 1.2s;
-}
-
-.resume .content a .btn-resume i {
-  color: #fff;
-  position: absolute;
-  padding: 20px 0;
-  top: -80px;
-  width: 100%;
-  left: 0;
-  -webkit-transition: top 0.5s;
-  -moz-transition: top 0.5s;
-  transition: top 0.5s;
-}
-
-.resume .content a .btn-resume:hover span {
-  opacity: 1;
-  -webkit-transition: opacity 0.4s;
-  -moz-transition: opacity 0.4s;
-  transition: opacity 0.4s;
-}
-
-.resume .content a .btn-resume:hover i {
-  top: 0;
-}
+/* IMAGESSSS 🖼️🖼️🖼️🖼️🖼️🖼️🖼️🖼️🖼️🖼️🖼️*/
 
 
-
-/*##### PORTFOLIO SECTION #####*/
 .project-image {
 
-  border-radius: 14px; /* Adjust the border-radius value as desired */
+  border-radius: 17px; /* Adjust the border-radius value as desired */
   overflow: hidden; /* Hide any overflowing content within the rounded image container */
   
 }
+/* ----------end of pictures------------- */
 
-.portfolio {
-  background-image: url("https://i.pinimg.com/564x/f8/db/d1/f8dbd174d1a5e7e0b908d64e988d0039.jpg");
-  background-attachment: fixed;
+.list-item {
+  border-left: 3px solid #3498db;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  margin-left: 0;
+  list-style: none;
+}
+.list-item .time {
+  display: inline-block;
+  margin-right: 50px;
   
-  padding: 80px 0;
-}
-.portfolio .content {
-  text-align: center;
-}
-.portfolio .content h1 {
-  color: #000000;
-  font-size: 2em;
-  margin-bottom: 50px;
 }
 
-.portfolio .content h3 {
-  color: #ffe4e4;
-  font-size: 2em;
-  margin-bottom: 50px;
+
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .navigation-list {
+    margin-bottom: 20px;
+    
+  }
+  .navigation-list .navigation-list-item .key-text {
+    font-size: 0.95rem;
+    height: 20px;
+    padding: 0;
+  }
+  .navigation-list .navigation-list-item .support-text {
+    font-size: 0.75rem;
+    visibility: initial;
+  }
 }
-.portfolio .content .projects {
-  width: 100%;
-}
-.portfolio .content .projects .project {
-  color: #a70000;
-  position: relative;
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 10%;
-  overflow: hidden;
-}
-.portfolio .content .projects .project:last-child {
-  margin-bottom: 0;
-}
-.portfolio .content .projects .project .project-image img {
-  width: 100%;
-}
-.portfolio .content .projects .project .project-title {
-  color: #3c3c3c;
-  padding: 10px 0;
-}
-.portfolio .content .projects .project .project-description {
-  color: #444;
-}
+/* -----------------------------------------------------------------end of projects-------------------------------------------------------------------------------------- */
+
+
+
+
+
 
 /*##### CONTACT SECTION #####*/
+
+
 .contact {
   padding: 20px 2;
   color:#945b05
@@ -577,6 +619,12 @@ section {
 .footer i {
   color: #333333;
 }
+
+
+
+
+
+
 
 /* ############################
         RESPONSIVE
