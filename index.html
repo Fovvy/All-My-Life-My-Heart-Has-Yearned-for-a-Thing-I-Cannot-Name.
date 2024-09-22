@@ -213,7 +213,7 @@
 <!-- #####################     RESUME      ###################### -->
 <section class="resume">
   <div class="button-container"> 
-    <a href="msg_me_on_linked_in_for_pass.pdf">𝒢𝐸𝒯 𝑀𝒴 𝑅𝐸𝒮𝒰𝑀𝐸</a>
+    <a href="mysaferesume.pdf">𝒢𝐸𝒯 𝑀𝒴 𝑅𝐸𝒮𝒰𝑀𝐸</a>
 
   </div>
 </section>
@@ -262,11 +262,17 @@
             <div class="support-text">Applocker</div>
           
           </li>
-          <li class="navigation-list-item col-md-12 col-sm-2 col-xs-2" data-nav="#next"> 
+          <li class="navigation-list-item col-md-12 col-sm-2 col-xs-2" data-nav="#project7"> 
             <div class="key-text">Project #7 </div>
-            <div class="support-text">What's Next?</div>
+            <div class="support-text">Docker Bench</div>
           
           </li>
+        </li>
+        <li class="navigation-list-item col-md-12 col-sm-2 col-xs-2" data-nav="#project8"> 
+          <div class="key-text">Project #8 </div>
+          <div class="support-text">What's Next?</div>
+        
+        </li>
          </ul>
        </nav>
      </div>
@@ -280,23 +286,73 @@
          <p>My first completed Ethernet cable, assembled during my time at Voraltex. Following industry standards and best practices, I carefully terminated the RJ-45 connector, ensuring each wire was precisely aligned and secured according to the T568B color sequence. </p>
          <p>I utilized essential tools like a cable stripper for clean wire preparation, a crimping tool for securely terminating the RJ-45 connector, and a cable tester to verify connections and troubleshoot any errors, which in my case, there weren't any. 😎</p>
 
-         <!-- IMAGE -->
-          <div class="project-image">
+        <!-- IMAGE -->
+        <div class="project-image">
           <!-- Credit image: Unsplash - Ken Cheung -->
           <img src="ethernet.jpg" alt=""/>
-          </div>
-       </div>
 
-       <!-- PROJECT 2 -->
+        </div>
        
-       <div class="panel" id="what">
+      </div>
+
+         <!-- PROJECT 7 -->
+     
+      <div class="panel" id="project7">
+        <h2>Project: Docker Bench Security Tool</h2>
+        <h3>Docker Configuration Auditing with Docker Bench Security Script</h3>
+        <p>The Docker-bench for Security tool is an open-source script which analyzes numerous standard best-practices when deploying Docker containers in a production environment. The fully automated tests are designed to locate issues with your configuration based on the CIS Docker Benchmark v1. 3.1 standards.</p>
+        <h3>Installing and running Docker Bench security tool</h3>
+        <!-- IMAGE -->
+        <div class="project-image">
+         <!-- Credit image: Unsplash - Ken Cheung -->
+         <img src="install.dockerb.png" alt=""/>
+         <p>git clone https://github.com/docker/docker-bench-security.git</p>
+
+         <br></br>
+
+        </div>
+        <h3>CD Into directory</h3>
+        <div class="project-image">
+          <!-- Credit image: Unsplash - Ken Cheung -->
+          <img src="cd.dockerb.png" alt=""/>
+          <p>cd docker-bench-security</p>
+          <br></br>
+ 
+          </div>
+        <h3>Run the script</h3>
+        <p>Docker-Bench-Security v1.3.6 loads. Wait for a few seconds; the status of the current Docker configuration is displayed, as shown in the screenshot below.</p>
+        <div class="project-image">
+          <!-- Credit image: Unsplash - Ken Cheung -->
+          <img src="run.script.png""/>
+          <br></br>
+        </div>
+
+        <h3>Results</h3>
+        <p>The [WARN] line in red color indicates the security warning, and the configuration needs to be changed according to the provided information.</p>
+        <p>The [INFO] line in blue color provides information about the security.</p>
+        <p>The [PASS] line in green color shows the escaped configuration test.</p>
+        <div class="project-image">
+          <!-- Credit image: Unsplash - Ken Cheung -->
+          <img src="indics.docker.png" alt=""/>
+        </div>
+        <p>These warnings can be resolved by configuring Docker daemon securely. The Docker daemon is a service to run Docker. This service can be configured using the JSON file, which is useful for keeping all docker configurations.</p>
+        <p><u>-𝟬𝟵/𝟮𝟬𝟮𝟰</u></p>
+      </div>
+
+      
+     
+
+
+                <!-- PROJECT 2 -->
+       
+              <div class="panel" id="what">
          <h2>Project: AWS Fortune Teller🪄</h2>         
          <h5>BUILT A FORTUNE teller application using AWS LAMBDA and API GATEWAY, that responds to user questions</h5>
-         <br></br>
+         
          <p>Now, this application can't actually tell your fortune and you probably shouldnt take any advice from it, But what you can do is ask any question that you like, and the application will tell you yes or no. 😁</p>
          <br></br>
-       Click here to access: 
-       (//r)
+         <p>Access here:<u>(took this link down)</u></p>
+
          <!-- IMAGE -->
           <div class="project-image">
           <!-- Credit image: Unsplash - Ken Cheung -->
@@ -402,7 +458,7 @@
             
         </div>
 
- <!--          PROJECT 6 -->
+              <!--          PROJECT 6 -->
        </div>
        <div class="panel" id="project6">
          <h2>Project: Applocker</h2>
@@ -459,12 +515,12 @@
   
   
            
-          <p>Denied Access to the selected service.</p>
+           <p>Denied Access to the selected service.</p>
            <!-- IMAGE -->
 
 
            <h5>Closure</h5>
-          <p>In order to use Applocker effectively, you need to enable the Application Identity setting on your system. This section explains how to do this by configuring a Group Policy object (GPO) with specific settings related to defining and enforcing AppLocker policies.</p>
+           <p>In order to use Applocker effectively, you need to enable the Application Identity setting on your system. This section explains how to do this by configuring a Group Policy object (GPO) with specific settings related to defining and enforcing AppLocker policies.</p>
            <!-- IMAGE -->
              <div class="project-image">
               <!-- Credit image: Unsplash - Ken Cheung -->
@@ -472,9 +528,82 @@
               
               <br></br>
 
-          <p><i>~𝟬𝟵/𝟮𝟬𝟮𝟰</i></p>
+           <p><u>-𝟬𝟵/𝟮𝟬𝟮𝟰</u></p>
+
           </div>
        </div>
+
+       <div class="panel" id="project8">
+        <h2>Project: Applocker</h2>
+        <h5>Exploring Applocker: A Windows Security Program for Controlling User Access</h5>
+        <p></p>
+        <p>In this project, I explored how to use the built-in Windows security program, Applocker, to control which applications users can run. </p>
+        <p>I'll cover the basics of setting up AppLocker rules using Group Policy Management and provide step-by-step instructions on how to enable Application Identity and create new rules.</p>
+        <h3>Understanding Applocker</h3>
+        <p>Applocker is a powerful tool that allows administrators to control which applications can be run on a Windows system by creating rules that exclude certain executables, windows installer files, and DLLs from running. The default rules are based on paths, with all files under those paths being included in the list of allowed apps.</p>
+        <img src="applocker.intro.png" alt="uwu">
+        <br></br>
+        <h5>Applocker Rules Using Group Policy Management</h5>
+        <!-- IMAGE -->
+        <div class="project-image">
+         <!-- Credit image: Unsplash - Ken Cheung -->
+         <img src="group.policy.png" alt="uwu"/>
+         <p>Set up AppLocker rules using Group Policy Management in a domain environment. The process involves opening the Group Policy Management window, navigating to the appropriate GPO settings, and implementing new rules for allowing or denying certain applications.</p>
+         <br></br>
+
+       
+         <h5>Enabling Application Identity</h5>
+         <p>In order to use Applocker effectively, you need to enable the Application Identity setting on your system. This section explains how to do this by configuring a Group Policy object (GPO) with specific settings related to defining and enforcing AppLocker policies.</p>
+          <!-- IMAGE -->
+        <div class="project-image">
+         <!-- Credit image: Unsplash - Ken Cheung -->
+           <img src="app.identity.2.png" alt="owo"/>
+         
+         <br></br>
+         <h5>Creating New Rules for Applocker</h5>
+        <p>Once you've enabled Application Identity, you can create new rules for Applocker that will allow or deny specific applications based on your organization's security needs. </p>
+          <!-- IMAGE -->
+          <div class="project-image">
+           <!-- Credit image: Unsplash - Ken Cheung -->
+           <img src="applocker.select.png" alt="uwu"/>
+
+         <p>scroll down under the left sidebar and navigate to Computer configuration -> Policies -> Windows Settings -> Security Settings -> Application Control Policies. Expand Application Control Policies, select and click on AppLocker.</p>
+          
+            <!-- IMAGE -->
+            <div class="project-image">
+             <!-- Credit image: Unsplash - Ken Cheung -->
+             <img src="applocker.conff.png" alt="uwu"/>
+
+
+
+              <!-- IMAGE -->
+            <div class="project-image">
+             <!-- Credit image: Unsplash - Ken Cheung -->
+             <img src="auto.gener.rule.png" alt="uwu"/>
+
+             <!-- IMAGE -->
+            <div class="project-image">
+             <!-- Credit image: Unsplash - Ken Cheung -->
+             <img src="deny.app.png" alt="uwu"/>
+ 
+ 
+          
+         <p>Denied Access to the selected service.</p>
+          <!-- IMAGE -->
+
+
+          <h5>Closure</h5>
+         <p>In order to use Applocker effectively, you need to enable the Application Identity setting on your system. This section explains how to do this by configuring a Group Policy object (GPO) with specific settings related to defining and enforcing AppLocker policies.</p>
+          <!-- IMAGE -->
+            <div class="project-image">
+             <!-- Credit image: Unsplash - Ken Cheung -->
+             <img src="locked.app.png" alt="uwu"/>
+             
+             <br></br>
+
+         <p><i>~𝟬𝟵/𝟮𝟬𝟮𝟰</i></p>
+         </div>
+      </div>
        <!-- COMING SOON -->
         <div class="panel" id="next">
             <h2>Coming Soon...</h2>
