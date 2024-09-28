@@ -43,7 +43,6 @@
             <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
               <li><a class="dropdown-item" href="dashboard">Dashboard</a></li>
               <li><a class="dropdown-item" href="shakespear">Shakespeare</a></li>
-              <li><a class="dropdown-item" href="2048">2048</a></li>
               <li><a class="dropdown-item" href="turtle">Turtle</a></li>
               <li><a class="dropdown-item" href="entropy">Entropy</a></li>
              
@@ -265,14 +264,21 @@
           <li class="navigation-list-item col-md-12 col-sm-2 col-xs-2" data-nav="#project7"> 
             <div class="key-text">Project #7 </div>
             <div class="support-text">Docker Bench</div>
-          
           </li>
-        </li>
-        <li class="navigation-list-item col-md-12 col-sm-2 col-xs-2" data-nav="#soon"> 
-          <div class="key-text">Project #8 </div>
-          <div class="support-text">What's Next?</div>
+          <li class="navigation-list-item col-md-12 col-sm-2 col-xs-2" data-nav="#project8"> 
+            <div class="key-text">Project #8 </div>
+            <div class="support-text">Miradore</div>
+          </li>
+
+          <li class="navigation-list-item col-md-12 col-sm-2 col-xs-2" data-nav="#soon"> 
+            <div class="key-text">Project #9 </div>
+            <div class="support-text">What's Next?</div>
+          </li>
+
+      
         
-        </li>
+          
+
          </ul>
        </nav>
      </div>
@@ -290,12 +296,20 @@
          <div class="project-image">
           <!-- Credit image: Unsplash - Ken Cheung -->
           <img src="ethernet.jpg" alt=""/>
-
         </div>
 
+        
+        
      </div>
+<!-- coming soon -->
+     <div class="panel" id="soon">
+       <h2>Coming Soon..⚡</h2>
+       <p>come back later to see what i'm working/worked on :*</p>
+      </div>
 
-         <!-- PROJECT 7 -->
+      
+
+<!-- PROJECT 7 -->
      
       <div class="panel" id="project7">
         <h2>Project: Docker Bench Security Tool</h2>
@@ -336,19 +350,101 @@
           <img src="indics.docker.png" alt=""/>
         </div>
         <p>These warnings can be resolved by configuring Docker daemon securely. The Docker daemon is a service to run Docker. This service can be configured using the JSON file, which is useful for keeping all docker configurations.</p>
+        <p>————————————————————————————————————————————————————————————</p>
         <p><u>-𝟬𝟵/𝟮𝟬𝟮𝟰</u></p>
       </div>
 
 
 
-      <div class="panel" id="soon">
+<!-- PROJECT 8 -->
+
+
+      <div class="panel" id="project8">
+        <h2>Project: Miradore</h2>
+        <h3>Mobile device management with Miradore, a cloud-based MDM solution</h3>
+        <p>In this project, I demonstrate how to implement mobile device security using the Miradore Mobile Device Management (MDM) solution. This lab covers key aspects of deploying, securing, monitoring, and managing mobile devices using Miradore's cloud-based MDM solution. 📱🛠️</p>
+        
+        <p>With the rise of BYOD (Bring Your Own Device) policies in organizations, it is critical to implement robust mobile security solutions. Miradore offers an effective MDM platform to control and secure company-owned and employee-owned devices, reducing support costs and mitigating potential security risks. This project simulates a scenario where security professionals must utilize Miradore to manage mobile devices in a work environment.</p>
+
+        <h3>Setting up Miradore Online MDM Solution</h3>
+        <p>I registered for a Miradore account and activated the service here ; <u>https://online.miradore.com/login/Register2</u></p>
+        <p>& Complete the registration process.</p>
+        
+        <!-- IMAGE -->
+        <div class="project-image">
+         <!-- Credit image: Unsplash - Ken Cheung -->
+         <img src="Miradore/getstarted.mira.png" alt=""/>
+         <br></br>
+        </div>
+
+        <h3>Enrolling a Device (Client) </h3>
+        <p>To do this, I installed the Miradore Online Client app on the Android machine. In the Miradore dashboard, I created a user profile for this device, inputting details such as the user’s name and email. This profile would allow the device to be associated with a user in the company.</p>
+        <!-- IMAGE -->
+        <div class="project-image">
+         <!-- Credit image: Unsplash - Ken Cheung -->
+         <img src="Miradore/enroll.mira.png" alt=""/>
+         <p>(To manage IOS and MacOS devices, you need to connect Miradore to the apple Push Notification service. this can help :<u> https://youtu.be/djP5D72rqrc</u> )</p>
+         
+         
+        
+        </div>
+        <p>Once the user was created, I generated enrollment credentials within the Miradore dashboard. These credentials were then entered into the Adroid device’s Miradore client app, which connected the device to the cloud platform. The connection was confirmed, and the device was successfully enrolled, allowing me to remotely manage it through the dashboard.</p>
+        <!-- IMAGE -->
+        <br></br>
+
+        <h3>Device Management</h3>
+        <p>With the Android device enrolled and secured, I returned to the Miradore dashboard to explore the various management options available for the device. The dashboard provided real-time information about the device, including its status, location, and the last synchronization time with the cloud platform. This information is invaluable for security professionals looking to monitor devices actively.</p>
+        <!-- IMAGE -->
+        <div class="project-image">
+         <!-- Credit image: Unsplash - Ken Cheung -->
+         <img src="Miradore/mira.manage.png" alt=""/>
+         
+
+         <br></br>
+        </div>
+
+
+        <h3>Remotely Resetting Passcode</h3>
+        <p>One of the key features of Miradore MDM is the ability to remotely reset a device's passcode.</p>
+        <p>I used the Reset Passcode function. In the dashboard, I selected the Android device and reset its passcode. This can be done either by sending the new passcode to the user or viewing it directly as an administrator. This feature is useful for assisting users who forget their device passcodes.</p>
+        <!-- IMAGE -->
+        <div class="project-image">
+         <!-- Credit image: Unsplash - Ken Cheung -->
+         <img src="Miradore/reset.mira.png" alt=""/>
+         <img src="Miradore/reset2.mira.png" alt=""/>
+         <img src="Miradore/mira.active.png" alt=""/>
+         
+
+         <br></br>
+        </div>
+
+
+        <h3>Locking a Lost/Stolen Device</h3>
+        <p>An essential feature of any MDM solution is the ability to secure a lost or stolen device. To simulate this scenario, I used Miradore’s Lost Mode to lock the enrolled Android device remotely. By accessing the Security section in the dashboard, I was able to activate Lost Mode, which rendered the device unusable until it was unlocked by an administrator.</p>
+        
+        <!-- IMAGE -->
+        <div class="project-image">
+         <!-- Credit image: Unsplash - Ken Cheung -->
+         <img src="Miradore/lock.mira.png" alt=""/>
+         <p>A Black screen will be displayed n the device, indicating the device has been locked and blocked</p>
+         <img src="Miradore/lock2.mira.png" alt=""/>
+         
+         
+         <br></br>
+
+
+         <h3>Closure</h3>
+         <p>This project highlights the practical use of the Miradore MDM solution to manage and secure mobile devices in an enterprise environment. From the initial setup and enrollment of devices to advanced security features like resetting passcodes and locking lost devices, Miradore proves to be an invaluable tool for organizations looking to secure their mobile infrastructure. By leveraging the cloud-based MDM system, administrators can reduce downtime, improve device security, and protect sensitive company data from unauthorized access.</p>
+        </div>
+        <p>————————————————————————————————————————————————————————————</p>
+        <p><u>-𝟬𝟵/𝟮𝟬𝟮𝟰</u></p>
+      </div>
+
+
+
 
       
-        <h2>Coming Soon..⚡</h2>
-        <p>come back later to see what i'm working/worked on :*</p>
-
-
-      </div>
+    
 
       
 
@@ -358,7 +454,7 @@
 
                 <!-- PROJECT 2 -->
        
-              <div class="panel" id="what">
+        <div class="panel" id="what">
          <h2>Project: AWS Fortune Teller🪄</h2>         
          <h5>BUILT A FORTUNE teller application using AWS LAMBDA and API GATEWAY, that responds to user questions</h5>
          
@@ -371,8 +467,9 @@
           <!-- Credit image: Unsplash - Ken Cheung -->
           <img src="lamda.png" alt=""/>
           </div>
-<!--          PROJECT 3 -->
        </div>
+
+       <!--          PROJECT 3 -->
        <div class="panel" id="how">
          <h2>Project: Distributed System with Ballerina</h2>
          <h5>Performance Management System with GraphQL and Ballerina</h5>
@@ -471,7 +568,7 @@
             
         </div>
 
-              <!--          PROJECT 6 -->
+         <!--          PROJECT 6 -->
        </div>
        <div class="panel" id="project6">
          <h2>Project: Applocker</h2>
