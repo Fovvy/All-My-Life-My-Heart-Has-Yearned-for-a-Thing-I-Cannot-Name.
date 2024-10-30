@@ -13,11 +13,11 @@ const options = {
 const skills = [
 {
   id: "html_css",
-  values: [94, 6] },
+  values: [97, 3] },
 
 {
   id: "sass",
-  values: [90, 10] },
+  values: [95, 5] },
 
 {
   id: "jquery",
@@ -33,7 +33,7 @@ const skills = [
 
 {
   id: "photoshop",
-  values: [78, 22] }];
+  values: [90, 10] }];
 
 
 
