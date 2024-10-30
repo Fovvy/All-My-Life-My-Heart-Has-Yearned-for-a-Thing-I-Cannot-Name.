@@ -806,3 +806,29 @@ a {
   color: #777; /* Text color */
   font-size: 12px; /* Adjust the font size as needed */
 }
+
+/* Style for the custom "i" */
+.custom-i {
+  color: #5f2f1c; /* Brown color for the "i" */
+  position: relative; /* Establish a positioning context for the dot */
+}
+
+/* Create a pink dot above the "i" using a pseudo-element */
+.custom-i::after {
+  content: '';
+  position: absolute;
+  top: 4.8px; /* Adjust this value to move the dot higher or lower */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px; /* Width of the pink dot */
+  height: 3px; /* Height of the pink dot */
+  background-color: #d88f93; /* Pink color for the dot */
+  border-radius: 100%; /* Makes the dot circular */
+}
+
+/* Style for the custom "i" */
+.feasable {
+  color: #5f2f1c; /* Brown color for the "i" */
+  position: relative; /* Establish a positioning context for the dot */
+}
+
